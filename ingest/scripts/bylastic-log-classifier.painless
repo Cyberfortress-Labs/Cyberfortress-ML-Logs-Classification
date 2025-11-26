@@ -249,3 +249,8 @@ if (idx.contains('modsecurity')) {
 
     return;
 }
+
+// Generic fallback: use original event/message if nothing matched
+if (ctx.event?.original != null || ctx.message != null) {
+    ctx.ml_input = ctx.event?.original ?: ctx.message;
+}
