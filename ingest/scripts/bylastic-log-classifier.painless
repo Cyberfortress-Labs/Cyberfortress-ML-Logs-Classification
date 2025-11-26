@@ -128,6 +128,22 @@ if (idx.contains('apache')) {
     return;
 }
 
+// ========================= MYSQL =========================
+if (idx.contains('mysql')) {
+    String msg = ctx.message;
+    String level = ctx.log?.level;
+
+    // Only process MySQL warnings
+    if (level == null || level != 'Warning') return;
+
+    ctx.ml_input =
+        "MySQL Warning: " + (ctx.message ?: "-") +
+        " | Level: " + level;
+
+    return;
+}
+
+
 // ========================= FIREWALL KHÁC =========================
 if (ctx.observer?.type == 'firewall' && ctx.event?.action != null) {
     ctx.ml_input =
