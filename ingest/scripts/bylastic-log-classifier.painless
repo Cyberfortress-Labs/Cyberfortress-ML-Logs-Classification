@@ -150,8 +150,12 @@ if (idx.contains('windows')) {
 // ========================= MODSECURITY =========================
 if (idx.contains('modsecurity')) {
 
-    // must have modsecurity messages (real alerts)
+    // must have ModSecurity messages (real alerts)
     if (ctx.modsec?.audit?.messages == null || ctx.modsec.audit.messages.size() == 0) return;
+
+    // must have a query string, otherwise skip (not an attack payload)
+    String query = ctx.url?.query;
+    if (query == null || query.trim().length() == 0) return;
 
     // build message list
     String msgs = String.join("; ", ctx.modsec.audit.messages);
@@ -159,7 +163,7 @@ if (idx.contains('modsecurity')) {
     ctx.ml_input =
         "ModSecurity Alert: " + msgs +
         " | URL: " + (ctx.url?.original ?: "-") +
-        " | Query: " + (ctx.url?.query ?: "-") +
+        " | Query: " + query +
         " | SourceIP: " + (ctx.source?.ip ?: "-") +
         " | SourcePort: " + (ctx.source?.port ?: "-");
 
