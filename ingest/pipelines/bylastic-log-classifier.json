@@ -32,12 +32,5 @@
         }
       ]
     }
-  },
-  {
-    "remove": {
-      "field": "ml_input",
-      "ignore_missing": true,
-      "ignore_failure": true
-    }
   }
 ]
