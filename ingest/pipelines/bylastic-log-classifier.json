@@ -1,43 +1,45 @@
-[
-  {
-    "script": {
-      "lang": "painless",
-      "source": "pipeline/bylastic-log-classifier.painless",
-      "ignore_failure": true,
-      "description": "Check if should process and build text"
-    }
-  },
-  {
-    "inference": {
-      "model_id": "byviz__bylastic_classification_logs",
-      "target_field": "ml.prediction",
-      "field_map": {
-        "ml_input": "text_field"
-      },
-      "inference_config": {
-        "text_classification": {
-          "num_top_classes": 1
-        }
-      },
-      "if": "ctx.ml_input != null && ctx.ml_input instanceof String && ctx.ml_input.length() > 0 && ctx.ml_input.length() <= 5000",
-      "on_failure": [
-        {
-          "append": {
-            "field": "tags",
-            "value": [
-              "_ml_inference_failure"
-            ],
-            "allow_duplicates": false
+{
+  "processors": [
+    {
+      "script": {
+        "lang": "painless",
+        "source": "String idx = ctx._index; if (idx == null) return; if (!(idx.contains('wazuh') || idx.contains('suricata') || idx.contains('pfsense') || idx.contains('modsecurity') || idx.contains('apache') || idx.contains('nginx') || idx.contains('mysql'))) { return; } if (idx.contains('suricata')) { String eventType = ctx.suricata?.eve?.event_type; if (eventType == null || eventType == 'stats' || eventType == 'flow' || eventType == 'netflow' || eventType == 'fileinfo' || eventType == 'dns') { return; } if (eventType == 'alert' && ctx.rule?.name != null) { ctx.ml_input = 'Suricata Alert: ' + ctx.rule.name + ' | Category: ' + (ctx.rule?.category ?: 'Unknown') + ' | ' + (ctx.source?.ip ?: '-') + ' -> ' + (ctx.destination?.ip ?: '-'); } } else if (idx.contains('pfsense')) { String action = ctx.event?.action; if (action == null || action != 'block') { return; } ctx.ml_input = 'pfSense Blocked: ' + (ctx.source?.ip ?: '-') + ':' + (ctx.source?.port ?: '-') + ' -> ' + (ctx.destination?.ip ?: '-') + ':' + (ctx.destination?.port ?: '-') + ' | Proto: ' + (ctx.network?.transport ?: '-'); } else if (ctx.rule?.description != null && ctx.full_log != null) { ctx.ml_input = 'Alert: ' + ctx.rule.description + ' | Log: ' + ctx.full_log; } else if (ctx.observer?.type == 'firewall' && ctx.event?.action != null) { ctx.ml_input = 'Firewall ' + ctx.event.action + ': ' + (ctx.source?.ip ?: '-') + ':' + (ctx.source?.port ?: '-') + ' -> ' + (ctx.destination?.ip ?: '-') + ':' + (ctx.destination?.port ?: '-'); } else if (ctx.event?.original != null) { ctx.ml_input = ctx.event.original; }",
+        "ignore_failure": true,
+        "description": "Check if should process and build text"
+      }
+    },
+    {
+      "inference": {
+        "model_id": "byviz__bylastic_classification_logs",
+        "target_field": "ml.prediction",
+        "field_map": {
+          "ml_input": "text_field"
+        },
+        "inference_config": {
+          "text_classification": {
+            "num_top_classes": 1
           }
-        }
-      ]
+        },
+        "if": "ctx.ml_input != null && ctx.ml_input instanceof String && ctx.ml_input.length() > 0 && ctx.ml_input.length() <= 5000",
+        "on_failure": [
+          {
+            "append": {
+              "field": "tags",
+              "value": [
+                "_ml_inference_failure"
+              ],
+              "allow_duplicates": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "remove": {
+        "field": "ml_input",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
     }
-  },
-  {
-    "remove": {
-      "field": "ml_input",
-      "ignore_missing": true,
-      "ignore_failure": true
-    }
-  }
-]
+  ]
+}

@@ -74,17 +74,21 @@ if (idx.contains('zeek')) {
 
 // ========================= PFSENSE =========================
 if (idx.contains('pfsense')) {
-    String action = ctx.event?.action;
 
-    // Chỉ lấy logs block
-    if (action == null || action != 'block') return;
+    // Normalize action safely
+    String action = ctx.event?.action != null ? ctx.event.action.toLowerCase() : null;
+    if (action == null) return;
 
+    // Only accept block / reject
+    if (!(action == "block" || action == "reject")) return;
+
+    // Build ML input safely
     ctx.ml_input =
-        'pfSense Blocked: ' +
-        (ctx.source?.ip ?: '-') + ':' + (ctx.source?.port ?: '-') +
-        ' -> ' +
-        (ctx.destination?.ip ?: '-') + ':' + (ctx.destination?.port ?: '-') +
-        ' | Proto: ' + (ctx.network?.transport ?: '-');
+        "pfSense: " + action.toUpperCase() + " " +
+        (ctx.source?.ip ?: "-") + ":" + (ctx.source?.port ?: "-") +
+        " -> " +
+        (ctx.destination?.ip ?: "-") + ":" + (ctx.destination?.port ?: "-") +
+        " | Proto: " + (ctx.network?.transport ?: "-");
 
     return;
 }
@@ -244,9 +248,4 @@ if (idx.contains('modsecurity')) {
         " | SourcePort: " + (ctx.source?.port ?: "-");
 
     return;
-}
-
-// ========================= FALLBACK =========================
-if (ctx.event?.original != null) {
-    ctx.ml_input = ctx.event.original;
 }
