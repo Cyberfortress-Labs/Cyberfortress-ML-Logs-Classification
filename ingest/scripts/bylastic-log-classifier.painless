@@ -4,6 +4,7 @@ if (idx == null) return;
 // Chỉ xử lý các index ưu tiên
 boolean hit = (
     idx.contains('wazuh') ||
+    idx.contains('zeek') ||
     idx.contains('suricata') ||
     idx.contains('pfsense') ||
     idx.contains('modsecurity') ||
@@ -37,6 +38,34 @@ if (idx.contains('suricata')) {
             ' | Category: ' + (ctx.rule?.category ?: 'Unknown') +
             ' | ' + (ctx.source?.ip ?: '-') +
             ' -> ' + (ctx.destination?.ip ?: '-');
+    }
+
+    return;
+}
+
+// ========================= ZEEK =========================
+if (idx.contains('zeek')) {
+
+    // Only accept real alerts: must have event.kind = "alert"
+    String kind = ctx.event?.kind;
+    if (kind == null || kind != 'alert') return;
+
+    // Must have a Zeek notice (we ignore all non-notice datasets)
+    if (ctx.zeek?.notice == null) return;
+
+    // Must have both name + description (alert-level messages)
+    if (ctx.rule?.name != null && ctx.rule?.description != null) {
+        ctx.ml_input =
+            'Zeek Alert: ' + ctx.rule.name +
+            ' | Description: ' + ctx.rule.description +
+            ' | Peer: ' + (ctx.zeek.notice.peer_descr ?: '-');
+        return;
+    }
+
+    // Fallback: use Zeek Notice message only when it's alert-level
+    if (ctx.zeek.notice.msg != null) {
+        ctx.ml_input = 'Zeek Notice: ' + ctx.zeek.notice.msg;
+        return;
     }
 
     return;
