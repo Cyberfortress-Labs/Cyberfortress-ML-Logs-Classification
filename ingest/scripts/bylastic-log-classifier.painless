@@ -89,9 +89,42 @@ if (idx.contains('pfsense')) {
     return;
 }
 
-// ========================= WAZUH / APACHE / NGINX / MYSQL =========================
+// ========================= WAZUH =========================
 if (ctx.rule?.description != null && ctx.full_log != null) {
     ctx.ml_input = 'Alert: ' + ctx.rule.description + ' | Log: ' + ctx.full_log;
+    return;
+}
+
+// ========================= APACHE =========================
+if (idx.contains('apache')) {
+
+    String level = ctx.log?.level;
+    String msg = ctx.message;
+
+    // Only keep real errors or alerts
+    boolean isAlert =
+        (level != null && (
+            level == 'error' ||
+            level == 'crit' ||
+            level == 'alert' ||
+            level == 'emerg' ||
+            level == 'warning'
+        )) ||
+        (msg != null && (
+            msg.toLowerCase().contains("error") ||
+            msg.toLowerCase().contains("failed") ||
+            msg.toLowerCase().contains("attack") ||
+            msg.toLowerCase().contains("denied") ||
+            msg.toLowerCase().contains("modsecurity")
+        ));
+
+    if (!isAlert) return; // skip normal apache logs
+
+    ctx.ml_input =
+        "Apache Alert: " + (msg ?: "-") +
+        " | Level: " + (level ?: "-") +
+        " | Host: " + (ctx.host?.hostname ?: "-");
+
     return;
 }
 
