@@ -10,7 +10,8 @@ boolean hit = (
     idx.contains('modsecurity') ||
     idx.contains('apache') ||
     idx.contains('nginx') ||
-    idx.contains('mysql')
+    idx.contains('mysql') ||
+    idx.contains('windows')
 );
 
 if (!hit) return;
@@ -103,6 +104,49 @@ if (ctx.observer?.type == 'firewall' && ctx.event?.action != null) {
         (ctx.destination?.ip ?: '-') + ':' + (ctx.destination?.port ?: '-');
     return;
 }
+
+// ========================= WINDOWS =========================
+if (idx.contains('windows')) {
+
+    // Only keep security alerts
+    String level = ctx.log?.level;
+    String kind = ctx.event?.kind;
+    String action = ctx.event?.action;
+    String msg = ctx.message;
+
+    // 1. Must be alert-level or contain detection keywords
+    boolean isAlert =
+        (kind != null && kind == 'alert') ||
+        (level != null && (level == 'warning' || level == 'error' || level == 'critical')) ||
+        (msg != null && (
+            msg.contains('detect') ||
+            msg.contains('malware') ||
+            msg.contains('threat') ||
+            msg.contains('blocked') ||
+            msg.contains('quarantine') ||
+            msg.contains('virus')
+        )) ||
+        (action != null && (
+            action.contains('Detected') ||
+            action.contains('Blocked') ||
+            action.contains('Quarantined')
+        ));
+
+    if (!isAlert) {
+        // skip noisy Windows logs
+        return;
+    }
+
+    // Build ML input
+    ctx.ml_input =
+        'Windows Alert: ' +
+        (ctx.event?.code ?: '-') +
+        ' | Provider: ' + (ctx.event?.provider ?: '-') +
+        ' | Message: ' + (msg ?: '-');
+
+    return;
+}
+
 
 // ========================= FALLBACK =========================
 if (ctx.event?.original != null) {
