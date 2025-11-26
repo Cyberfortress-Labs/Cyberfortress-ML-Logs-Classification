@@ -1,0 +1,43 @@
+[
+  {
+    "script": {
+      "lang": "painless",
+      "source": "pipeline/bylastic-log-classifier.painless",
+      "ignore_failure": true,
+      "description": "Check if should process and build text"
+    }
+  },
+  {
+    "inference": {
+      "model_id": "byviz__bylastic_classification_logs",
+      "target_field": "ml.prediction",
+      "field_map": {
+        "ml_input": "text_field"
+      },
+      "inference_config": {
+        "text_classification": {
+          "num_top_classes": 1
+        }
+      },
+      "if": "ctx.ml_input != null && ctx.ml_input instanceof String && ctx.ml_input.length() > 0 && ctx.ml_input.length() <= 5000",
+      "on_failure": [
+        {
+          "append": {
+            "field": "tags",
+            "value": [
+              "_ml_inference_failure"
+            ],
+            "allow_duplicates": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "remove": {
+      "field": "ml_input",
+      "ignore_missing": true,
+      "ignore_failure": true
+    }
+  }
+]

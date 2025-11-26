@@ -1,0 +1,81 @@
+String idx = ctx._index;
+if (idx == null) return;
+
+// Chỉ xử lý các index ưu tiên
+boolean hit = (
+    idx.contains('wazuh') ||
+    idx.contains('suricata') ||
+    idx.contains('pfsense') ||
+    idx.contains('modsecurity') ||
+    idx.contains('apache') ||
+    idx.contains('nginx') ||
+    idx.contains('mysql')
+);
+
+if (!hit) return;
+
+// ========================= SURICATA =========================
+if (idx.contains('suricata')) {
+    String eventType = ctx.suricata?.eve?.event_type;
+
+    // Bỏ qua các event không quan trọng
+    if (
+        eventType == null ||
+        eventType == 'stats' ||
+        eventType == 'flow' ||
+        eventType == 'netflow' ||
+        eventType == 'fileinfo' ||
+        eventType == 'dns'
+    ) {
+        return;
+    }
+
+    // Suricata alert
+    if (eventType == 'alert' && ctx.rule?.name != null) {
+        ctx.ml_input =
+            'Suricata Alert: ' + ctx.rule.name +
+            ' | Category: ' + (ctx.rule?.category ?: 'Unknown') +
+            ' | ' + (ctx.source?.ip ?: '-') +
+            ' -> ' + (ctx.destination?.ip ?: '-');
+    }
+
+    return;
+}
+
+// ========================= PFSENSE =========================
+if (idx.contains('pfsense')) {
+    String action = ctx.event?.action;
+
+    // Chỉ lấy logs block
+    if (action == null || action != 'block') return;
+
+    ctx.ml_input =
+        'pfSense Blocked: ' +
+        (ctx.source?.ip ?: '-') + ':' + (ctx.source?.port ?: '-') +
+        ' -> ' +
+        (ctx.destination?.ip ?: '-') + ':' + (ctx.destination?.port ?: '-') +
+        ' | Proto: ' + (ctx.network?.transport ?: '-');
+
+    return;
+}
+
+// ========================= WAZUH / APACHE / NGINX / MYSQL =========================
+if (ctx.rule?.description != null && ctx.full_log != null) {
+    ctx.ml_input = 'Alert: ' + ctx.rule.description + ' | Log: ' + ctx.full_log;
+    return;
+}
+
+// ========================= FIREWALL KHÁC =========================
+if (ctx.observer?.type == 'firewall' && ctx.event?.action != null) {
+    ctx.ml_input =
+        'Firewall ' + ctx.event.action + ': ' +
+        (ctx.source?.ip ?: '-') + ':' + (ctx.source?.port ?: '-') +
+        ' -> ' +
+        (ctx.destination?.ip ?: '-') + ':' + (ctx.destination?.port ?: '-');
+    return;
+}
+
+// ========================= FALLBACK =========================
+if (ctx.event?.original != null) {
+    ctx.ml_input = ctx.event.original;
+}
