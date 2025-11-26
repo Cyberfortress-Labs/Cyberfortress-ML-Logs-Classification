@@ -1,4 +1,4 @@
-String idx = ctx._index;
+String idx = ctx._index != null ? ctx._index.toLowerCase() : null;
 if (idx == null) return;
 
 // Chỉ xử lý các index ưu tiên
