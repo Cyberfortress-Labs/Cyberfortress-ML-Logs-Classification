@@ -1,0 +1,19 @@
+POST _ml/trained_models/byviz__bylastic_classification_logs/deployment/_start
+{
+  "number_of_allocations": 1,
+  "threads_per_allocation": 4,
+  "queue_capacity": 10000
+}
+
+GET _ml/trained_models/byviz__bylastic_classification_logs
+
+
+POST _ingest/pipeline/bylastic-log-classifier/_simulate
+{
+  "docs": [
+    {
+      // Example document to test the pipeline
+    }
+  ]
+}
+
