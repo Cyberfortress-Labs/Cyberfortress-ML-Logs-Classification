@@ -144,6 +144,33 @@ if (idx.contains('mysql')) {
 }
 
 
+// ========================= NGINX =========================
+if (idx.contains("nginx")) {
+
+    String level = ctx.log?.level ?: "";
+    String msg = ctx.message ?: "";
+
+    // Skip everything if level = notice (too noisy)
+    if (level == "notice") return;
+
+    // Skip startup/version messages
+    if (
+        msg.contains("version") ||
+        msg.contains("loaded") ||
+        msg.contains("built") ||
+        msg.contains("using")
+    ) return;
+
+    // If got here → it's a real error
+    ctx.ml_input =
+        "Nginx Error: " + msg +
+        " | Level: " + level;
+
+    return;
+}
+
+
+
 // ========================= FIREWALL KHÁC =========================
 if (ctx.observer?.type == 'firewall' && ctx.event?.action != null) {
     ctx.ml_input =
