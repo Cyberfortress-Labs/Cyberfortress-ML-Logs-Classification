@@ -147,6 +147,23 @@ if (idx.contains('windows')) {
     return;
 }
 
+// ========================= MODSECURITY =========================
+if (idx.contains('modsecurity')) {
+
+    // must have modsecurity messages (real alerts)
+    if (ctx.modsec?.audit?.messages == null || ctx.modsec.audit.messages.size() == 0) return;
+
+    // build message list
+    String msgs = String.join("; ", ctx.modsec.audit.messages);
+
+    ctx.ml_input =
+        "ModSecurity Alert: " + msgs +
+        " | URL: " + (ctx.url?.original ?: "-") +
+        " | Query: " + (ctx.url?.query ?: "-") +
+        " | SourceIP: " + (ctx.source?.ip ?: "-");
+
+    return;
+}
 
 // ========================= FALLBACK =========================
 if (ctx.event?.original != null) {
