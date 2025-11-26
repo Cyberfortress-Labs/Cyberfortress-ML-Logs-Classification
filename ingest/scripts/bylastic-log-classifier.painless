@@ -160,7 +160,8 @@ if (idx.contains('modsecurity')) {
         "ModSecurity Alert: " + msgs +
         " | URL: " + (ctx.url?.original ?: "-") +
         " | Query: " + (ctx.url?.query ?: "-") +
-        " | SourceIP: " + (ctx.source?.ip ?: "-");
+        " | SourceIP: " + (ctx.source?.ip ?: "-") +
+        " | SourcePort: " + (ctx.source?.port ?: "-");
 
     return;
 }
