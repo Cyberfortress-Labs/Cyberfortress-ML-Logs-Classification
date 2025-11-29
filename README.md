@@ -1,7 +1,3 @@
-Dưới đây là phiên bản **README chuẩn GitHub**, đã **bổ sung rõ nguồn model HuggingFace**, ghi chú rằng **model không phải do bạn train**, bạn chỉ sử dụng.
-
----
-
 # Cyberfortress ML Logs Classification
 
 ## Purpose
