@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Lightweight pipeline and model integration that converts diverse security logs into normalized text inputs and applies a text-classification model to label events (INFO, WARNING, ALERT, etc.).
+Lightweight pipeline and model integration that converts diverse security logs into normalized text inputs and applies a text-classification model to label events (INFO, WARNING, ERROR).
 Designed primarily for Elasticsearch ingest pipelines but includes local utilities for inspection and evaluation.
 
 ## Model Source
