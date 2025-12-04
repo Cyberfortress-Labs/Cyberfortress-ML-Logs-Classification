@@ -1,0 +1,4152 @@
+[
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "hHySJ5kB2nLyhGIc5q4Y",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        164
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010909"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:25:52.548Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'elastic'."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:02.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:25:51.712Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:25:51.712Z",
+      31
+    ],
+    "ml_input": "MySQL Warning: [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'elastic'. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "hnySJ5kB2nLyhGIc5q4Y",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        287
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010909"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:25:52.549Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 10  user: 'elastic'."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:02.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:25:51.715Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:25:51.715Z",
+      32
+    ],
+    "ml_input": "MySQL Warning: [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 10  user: 'elastic'. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "cXyTJ5kB2nLyhGIcf_2J",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        1093
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:26:34.575Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:26:28.096Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:26:28.096Z",
+      9
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "c3yTJ5kB2nLyhGIcf_2J",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        1356
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-011810"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:26:34.577Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:26:28.104Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:26:28.104Z",
+      11
+    ],
+    "ml_input": "MySQL Warning: [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "dnyTJ5kB2nLyhGIcf_2J",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        1883
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        10
+      ],
+      "event.code": [
+        "MY-013360"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:26:34.579Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'"
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:26:28.240Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:26:28.240Z",
+      14
+    ],
+    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "fHyTJ5kB2nLyhGIcf_2J",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        2734
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:26:38.585Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:26:37.812Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:26:37.812Z",
+      20
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "fnyTJ5kB2nLyhGIcf_2J",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        2997
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-011810"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:26:38.585Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:26:37.832Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:26:37.832Z",
+      22
+    ],
+    "ml_input": "MySQL Warning: [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
+    "_id": "AH2TJ5kB2nLyhGIcpxw4",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        3979
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-08T04:26:44.598Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-141-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-09-08T04:26:52.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-08T04:26:44.522Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "61a09412-f7f5-42c2-b5a1-d3179c8937e8"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-08T04:26:44.522Z",
+      4
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.09.08-000003",
+    "_id": "3_lhmJkBUp_voNGIHGMJ",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        500
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-30T02:08:42.605Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-09-30T02:08:43.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-30T02:08:35.227Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "5415c914-57e1-4fa2-bd72-76f01a86e91a"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-30T02:08:35.227Z",
+      16
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.09.08-000003",
+    "_id": "Ohx2mJkBb3d1KkWTFKSW",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        1754
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-30T02:17:12.526Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-09-30T02:31:38.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-30T02:17:06.933Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "8962b819-e91b-4f00-93d8-46f80a5530aa"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-30T02:17:06.933Z",
+      6
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.09.08-000003",
+    "_id": "kBx2mJkBb3d1KkWTQc7R",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        2382
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        18
+      ],
+      "event.code": [
+        "MY-013360"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-09-30T02:27:50.665Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'"
+      ],
+      "event.ingested": [
+        "2025-09-30T02:31:50.000Z"
+      ],
+      "@timestamp": [
+        "2025-09-30T02:27:43.299Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "8962b819-e91b-4f00-93d8-46f80a5530aa"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-09-30T02:27:43.299Z",
+      0
+    ],
+    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "gArLxpkBQUQ3F8cku2OJ",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-09T02:27:42.219Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-09T02:27:44.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-09T02:27:38.689Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "ce2a4d16-5090-49ce-bbd9-78a3c95265c5"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-09T02:27:38.689Z",
+      89
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "8QrNxpkBQUQ3F8ckEYG-",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        950
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        11
+      ],
+      "event.code": [
+        "MY-013360"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-09T02:28:59.087Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'"
+      ],
+      "event.ingested": [
+        "2025-10-09T02:29:12.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-09T02:28:59.013Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "ce2a4d16-5090-49ce-bbd9-78a3c95265c5"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-09T02:28:59.013Z",
+      84
+    ],
+    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "Lyl115kBHT68mvxWIuWR",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-12T08:05:15.206Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-12T08:06:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-12T08:05:09.469Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "05b91828-3cb4-4073-b339-67dc04cc4dc0"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-12T08:05:09.469Z",
+      80
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "czBP2JkBHT68mvxWW5T2",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        950
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        34
+      ],
+      "event.code": [
+        "MY-013360"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-12T12:04:57.809Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'"
+      ],
+      "event.ingested": [
+        "2025-10-12T12:05:03.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-12T12:04:50.224Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "05b91828-3cb4-4073-b339-67dc04cc4dc0"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-12T12:04:50.224Z",
+      74
+    ],
+    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "xKmJ4JkBE4Hg3vY1tTE6",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-14T02:23:51.460Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-14T02:25:39.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-14T02:23:43.050Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "46451f5a-c9fc-40d8-bbcb-4f34b746f487"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-14T02:23:43.050Z",
+      71
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "fUMP4ZkBXpbOfZQmw8TN",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        1576
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-14T04:51:16.063Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-14T04:52:08.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-14T04:51:10.180Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "54f1e8b2-c1d4-4861-b3cb-f57062fa3bf6"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-14T04:51:10.180Z",
+      61
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "Ncyy55kBqvxp8NbH7Kyl",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-15T11:48:04.943Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-153-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-15T11:48:06.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-15T11:48:01.450Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "1879ef17-8dd1-42f3-aa1a-b2c2fe1052dc"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-15T11:48:01.450Z",
+      51
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "BfML7ZkBLN167rGYmrOO",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-16T12:42:56.559Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-157-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-16T12:43:00.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-16T12:42:49.829Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "aaab08f0-f8ae-4c31-805d-91f5028bb1e1"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-16T12:42:49.829Z",
+      44
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "6r3q8JkBQ9Ke71xAa7E5",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-17T06:45:16.754Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-157-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-17T06:45:18.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-17T06:45:11.182Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "ae9425b2-bc15-4e8e-b0d5-77e14d53a8cc"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-17T06:45:11.182Z",
+      33
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "aWdKL5oB6S5R_rUT2yO9",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-29T09:27:03.846Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-157-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log.1"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-29T09:27:06.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-27T06:09:01.632Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log.1"
+      ],
+      "agent.ephemeral_id": [
+        "2f111697-5b0b-4a61-a842-f1b26b303059"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-27T06:09:01.632Z",
+      23
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "j2dKL5oB6S5R_rUT2yO9",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        950
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        11
+      ],
+      "event.code": [
+        "MY-013360"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-29T09:27:04.669Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-157-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log.1"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'"
+      ],
+      "event.ingested": [
+        "2025-10-29T09:27:06.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-27T06:10:37.694Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log.1"
+      ],
+      "agent.ephemeral_id": [
+        "2f111697-5b0b-4a61-a842-f1b26b303059"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-27T06:10:37.694Z",
+      27
+    ],
+    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "YBR-L5oBNZ8tUkk0spma",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        1576
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-29T10:23:42.443Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-160-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-29T10:23:43.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-29T10:23:26.096Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "753e9a2f-5e1b-42e9-a911-225e01d9b62b"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-29T10:23:26.096Z",
+      15
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "VFUlOJoBPLHK7pZCTPpd",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        322
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        0
+      ],
+      "event.code": [
+        "MY-010068"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-31T02:42:16.311Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-160-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-010068] [Server] CA certificate ca.pem is self signed."
+      ],
+      "event.ingested": [
+        "2025-10-31T02:42:39.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-31T02:42:01.223Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "21fa9209-4906-4cde-9b7a-e0022fe5b685"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-31T02:42:01.223Z",
+      7
+    ],
+    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+  },
+  {
+    "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
+    "_id": "klYrOJoBPLHK7pZCvbgZ",
+    "_version": 1,
+    "_score": null,
+    "fields": {
+      "elastic_agent.version": [
+        "8.17.7"
+      ],
+      "event.category": [
+        "database"
+      ],
+      "host.os.name.text": [
+        "Ubuntu"
+      ],
+      "host.name.text": [
+        "dvwa"
+      ],
+      "host.hostname": [
+        "dvwa"
+      ],
+      "host.mac": [
+        "00-0C-29-6C-E5-05"
+      ],
+      "agent.name.text": [
+        "dvwa"
+      ],
+      "host.os.version": [
+        "22.04.5 LTS (Jammy Jellyfish)"
+      ],
+      "host.os.name": [
+        "Ubuntu"
+      ],
+      "log.level": [
+        "Warning"
+      ],
+      "agent.name": [
+        "dvwa"
+      ],
+      "host.name": [
+        "dvwa"
+      ],
+      "event.agent_id_status": [
+        "verified"
+      ],
+      "event.kind": [
+        "event"
+      ],
+      "host.os.type": [
+        "linux"
+      ],
+      "input.type": [
+        "log"
+      ],
+      "log.offset": [
+        950
+      ],
+      "data_stream.type": [
+        "logs"
+      ],
+      "tags": [
+        "mysql-error"
+      ],
+      "host.architecture": [
+        "x86_64"
+      ],
+      "event.provider": [
+        "Server"
+      ],
+      "mysql.thread_id": [
+        11
+      ],
+      "event.code": [
+        "MY-013360"
+      ],
+      "agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "ecs.version": [
+        "8.11.0"
+      ],
+      "host.containerized": [
+        false
+      ],
+      "event.created": [
+        "2025-10-31T02:49:26.570Z"
+      ],
+      "agent.version": [
+        "8.17.7"
+      ],
+      "host.os.family": [
+        "debian"
+      ],
+      "host.ip": [
+        "192.168.85.112",
+        "fe80::20c:29ff:fe6c:e505"
+      ],
+      "agent.type": [
+        "filebeat"
+      ],
+      "event.module": [
+        "mysql"
+      ],
+      "host.os.kernel": [
+        "5.15.0-160-generic"
+      ],
+      "log.file.path.text": [
+        "/var/log/mysql/error.log"
+      ],
+      "elastic_agent.snapshot": [
+        false
+      ],
+      "host.id": [
+        "8191c0bd537349bb9c9a28505357b83f"
+      ],
+      "event.timezone": [
+        "+07:00"
+      ],
+      "elastic_agent.id": [
+        "4ad91d84-c8da-42ab-a761-f109a6c97c23"
+      ],
+      "data_stream.namespace": [
+        "default"
+      ],
+      "host.os.codename": [
+        "jammy"
+      ],
+      "message": [
+        "[MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'"
+      ],
+      "event.ingested": [
+        "2025-10-31T02:49:41.000Z"
+      ],
+      "@timestamp": [
+        "2025-10-31T02:49:22.518Z"
+      ],
+      "host.os.platform": [
+        "ubuntu"
+      ],
+      "data_stream.dataset": [
+        "mysql.error"
+      ],
+      "event.type": [
+        "info"
+      ],
+      "log.file.path": [
+        "/var/log/mysql/error.log"
+      ],
+      "agent.ephemeral_id": [
+        "21fa9209-4906-4cde-9b7a-e0022fe5b685"
+      ],
+      "event.dataset": [
+        "mysql.error"
+      ]
+    },
+    "highlight": {
+      "log.level": [
+        "@kibana-highlighted-field@Warning@/kibana-highlighted-field@"
+      ]
+    },
+    "sort": [
+      "2025-10-31T02:49:22.518Z",
+      0
+    ],
+    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+  }
+]
