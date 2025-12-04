@@ -816,7 +816,7 @@
       "2025-09-30T02:09:45.362Z",
       17
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-apache.error-default-2025.09.08-000003",
@@ -987,7 +987,7 @@
       "2025-09-30T02:09:46.799Z",
       18
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-nginx.error-default-2025.07.09-000002",
@@ -1806,7 +1806,7 @@
       "2025-09-30T02:20:06.702Z",
       0
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-apache.error-default-2025.09.08-000003",
@@ -1977,7 +1977,7 @@
       "2025-09-30T02:20:08.091Z",
       1
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-apache.error-default-2025.09.08-000003",
@@ -2148,7 +2148,7 @@
       "2025-09-30T02:20:34.480Z",
       2
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-apache.error-default-2025.09.08-000003",
@@ -2319,7 +2319,7 @@
       "2025-09-30T02:27:01.728Z",
       11
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/DBMS/MySQL.php:13\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/DBMS/MySQL.php(13): mysqli_connect()\\n#1 /var/www/html/dvwa/setup.php(23): include_once('...')\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/DBMS/MySQL.php on line 13, referer: http://dvwa.local/setup.php | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/DBMS/MySQL.php:13\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/DBMS/MySQL.php(13): mysqli_connect()\\n#1 /var/www/html/dvwa/setup.php(23): include_once('...')\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/DBMS/MySQL.php on line 13, referer: http://dvwa.local/setup.php | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-apache.error-default-2025.09.08-000003",
@@ -2490,7 +2490,7 @@
       "2025-09-30T02:27:09.127Z",
       12
     ],
-    "ml_input": "Apache Alert: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
+    "ml_input": "Apache: PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php:569\\nStack trace:\\n#0 /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php(569): mysqli_connect()\\n#1 /var/www/html/dvwa/login.php(8): dvwaDatabaseConnect()\\n#2 {main}\\n  thrown in /var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php on line 569 | Level: error | Host: dvwa"
   },
   {
     "_index": ".ds-logs-nginx.error-default-2025.09.30-000003",

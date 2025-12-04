@@ -1,0 +1,51 @@
+======================================================================
+ML MODEL EVALUATION RESULTS
+======================================================================
+Timestamp:     2025-12-04T17:32:23.818417
+Input file:    d:\Documents\UIT\Nam_4\NT505_KLTN\Cyberfortress-Src\Cyberfortress-ML-Logs-Classification\assets\eval_input\eval_data.txt
+Model path:    d:\Documents\UIT\Nam_4\NT505_KLTN\Cyberfortress-Src\Cyberfortress-ML-Logs-Classification\model
+CPU workers:   12
+
+----------------------------------------------------------------------
+STATISTICS
+----------------------------------------------------------------------
+Total logs:    2081
+Successful:    2081
+Failed:        0
+Total time:    169.79 seconds
+Throughput:    12.26 logs/second
+
+----------------------------------------------------------------------
+LATENCY
+----------------------------------------------------------------------
+Average:       843.37 ms
+Min:           230.65 ms
+Max:           2976.48 ms
+P50:           729.49 ms
+P95:           2020.06 ms
+P99:           2665.38 ms
+
+----------------------------------------------------------------------
+LABEL CATEGORIES
+----------------------------------------------------------------------
+ERROR:
+  Critical failures or serious problems requiring immediate attention
+WARNING:
+  Potential issues that could become errors if not properly managed
+INFO:
+  Informational logs about normal system functioning
+
+----------------------------------------------------------------------
+PREDICTION DISTRIBUTION
+----------------------------------------------------------------------
+ERROR           0 (  0.0%)
+WARNING      2035 ( 97.8%)
+INFO           46 (  2.2%)
+
+----------------------------------------------------------------------
+CLASS DISTRIBUTION
+----------------------------------------------------------------------
+Class 1 (WARNING):   2035 ( 97.8%)
+Class 2 (INFO   ):     46 (  2.2%)
+
+======================================================================

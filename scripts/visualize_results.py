@@ -3,7 +3,8 @@ import argparse
 import json
 import os
 import matplotlib.pyplot as plt
-
+import glob
+from pathlib import Path
 
 # ============================================================
 # Helper: Ensure output directory exists
@@ -74,6 +75,15 @@ def plot_latency_hist(latencies, output_dir):
     plt.savefig(os.path.join(output_dir, "latency_hist.png"))
     plt.close()
 
+def resolve_input_file(pattern: str):
+    """Resolve wildcard pattern to the newest matching file."""
+    files = glob.glob(pattern)
+    if not files:
+        raise FileNotFoundError(f"No files matched pattern: {pattern}")
+
+    # Sort by modified time, newest first
+    files = sorted(files, key=lambda f: Path(f).stat().st_mtime, reverse=True)
+    return files[0]
 
 # ============================================================
 # Main CLI
@@ -93,7 +103,9 @@ def main():
     )
 
     args = parser.parse_args()
-    input_path = args.input
+    input_path = resolve_input_file(args.input)
+    print(f"[OK] Using latest file: {input_path}")
+    
     output_dir = args.output
 
     # Make sure output directory exists

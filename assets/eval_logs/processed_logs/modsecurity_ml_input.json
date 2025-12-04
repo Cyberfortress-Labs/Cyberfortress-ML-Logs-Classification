@@ -285,7 +285,7 @@
       "2025-10-31T02:55:32.000Z",
       3
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+---------&Submit=Submit | Query: id='+OR+1=1+---------&Submit=Submit | SourceIP: 10.81.85.3 | SourcePort: 54358"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+---------&Submit=Submit | Query: id='+OR+1=1+---------&Submit=Submit | SourceIP: 10.81.85.3 | SourcePort: 54358"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -522,7 +522,7 @@
       "2025-10-31T02:55:27.000Z",
       1
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address | URL: http://192.168.71.5:80//vulnerabilities/fi/?page=include.php | Query: page=include.php | SourceIP: 10.81.85.3 | SourcePort: 54358"
+    "ml_input": "ModSecurity: Host header is a numeric IP address | URL: http://192.168.71.5:80//vulnerabilities/fi/?page=include.php | Query: page=include.php | SourceIP: 10.81.85.3 | SourcePort: 54358"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -810,7 +810,7 @@
       "2025-10-31T02:55:15.000Z",
       6
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+---------&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+---------&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 54358"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+---------&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+---------&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 54358"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -1098,7 +1098,7 @@
       "2025-10-31T02:55:11.000Z",
       4
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+----&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+----&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 54326"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+----&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+----&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 54326"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -1386,7 +1386,7 @@
       "2025-10-31T02:54:00.000Z",
       13
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 48260"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 48260"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -1674,7 +1674,7 @@
       "2025-10-31T02:53:56.000Z",
       12
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 48260"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 48260"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -1971,7 +1971,7 @@
       "2025-10-31T02:53:46.000Z",
       15
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 59676"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 59676"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -2268,7 +2268,7 @@
       "2025-10-31T02:53:43.000Z",
       14
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 59676"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 59676"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -2556,7 +2556,7 @@
       "2025-10-31T02:51:39.000Z",
       16
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 52916"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+--&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 52916"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -2853,7 +2853,7 @@
       "2025-10-31T02:51:35.000Z",
       18
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 50783"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+--&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 50783"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -3150,7 +3150,7 @@
       "2025-10-31T02:51:30.000Z",
       17
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 50783"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=3349e73e8581bcc2e35329b12b3a3904 | SourceIP: 10.81.85.3 | SourcePort: 50783"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -3438,7 +3438,7 @@
       "2025-10-31T02:51:24.000Z",
       20
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 58320"
+    "ml_input": "ModSecurity: Host header is a numeric IP address; SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 8) | URL: http://192.168.71.5:80//vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=c3e39cef3aac5ce6e0d704ae653deb96 | SourceIP: 10.81.85.3 | SourcePort: 58320"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -3675,7 +3675,7 @@
       "2025-10-31T02:50:54.000Z",
       43
     ],
-    "ml_input": "ModSecurity Alert: Host header is a numeric IP address | URL: http://192.168.71.5:80/vulnerabilities/fi/?page=include.php | Query: page=include.php | SourceIP: 10.81.85.3 | SourcePort: 58306"
+    "ml_input": "ModSecurity: Host header is a numeric IP address | URL: http://192.168.71.5:80/vulnerabilities/fi/?page=include.php | Query: page=include.php | SourceIP: 10.81.85.3 | SourcePort: 58306"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -3944,7 +3944,7 @@
       "2025-10-27T06:20:15.000Z",
       63
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit | SourceIP: 192.168.85.1 | SourcePort: 62980"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit | SourceIP: 192.168.85.1 | SourcePort: 62980"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -4213,7 +4213,7 @@
       "2025-10-27T06:14:34.000Z",
       62
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit | SourceIP: 192.168.85.1 | SourcePort: 55780"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit | SourceIP: 192.168.85.1 | SourcePort: 55780"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -4466,7 +4466,7 @@
       "2025-10-27T06:14:06.000Z",
       61
     ],
-    "ml_input": "ModSecurity Alert: Remote Command Execution: Unix Shell Code Found; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://localhost:80/?doc=/bin/ls | Query: doc=/bin/ls | SourceIP: 127.0.0.1 | SourcePort: 46312"
+    "ml_input": "ModSecurity: Remote Command Execution: Unix Shell Code Found; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://localhost:80/?doc=/bin/ls | Query: doc=/bin/ls | SourceIP: 127.0.0.1 | SourcePort: 46312"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -4726,7 +4726,7 @@
       "2025-10-12T12:21:48.000Z",
       165
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--+%2F%2F%2F%2F&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | Query: id='+OR+1=1+--+////&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | SourceIP: 203.0.113.100 | SourcePort: 60874"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--+%2F%2F%2F%2F&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | Query: id='+OR+1=1+--+////&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | SourceIP: 203.0.113.100 | SourcePort: 60874"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -4986,7 +4986,7 @@
       "2025-10-12T12:21:37.000Z",
       166
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | SourceIP: 203.0.113.100 | SourcePort: 60874"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f9e30fab4f8a232127c8e0cd48c8d0c3 | SourceIP: 203.0.113.100 | SourcePort: 60874"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -5255,7 +5255,7 @@
       "2025-10-12T12:05:04.000Z",
       172
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -5524,7 +5524,7 @@
       "2025-10-12T12:04:59.000Z",
       171
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -5793,7 +5793,7 @@
       "2025-10-12T12:04:59.000Z",
       170
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -6062,7 +6062,7 @@
       "2025-10-12T12:04:59.000Z",
       169
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -6331,7 +6331,7 @@
       "2025-10-12T12:04:59.000Z",
       168
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -6600,7 +6600,7 @@
       "2025-10-12T12:04:58.000Z",
       167
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=9d4e4cc7fc83439b55820056f96844ed | SourceIP: 192.168.85.1 | SourcePort: 50400"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -6869,7 +6869,7 @@
       "2025-10-09T02:42:38.000Z",
       176
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=1+%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=1+'+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=1+%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=1+'+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -7138,7 +7138,7 @@
       "2025-10-09T02:42:34.000Z",
       175
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -7407,7 +7407,7 @@
       "2025-10-09T02:42:31.000Z",
       174
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -7676,7 +7676,7 @@
       "2025-10-09T02:42:27.000Z",
       173
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 63845"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -7945,7 +7945,7 @@
       "2025-10-09T02:37:35.000Z",
       180
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id='+OR+1=1+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -8214,7 +8214,7 @@
       "2025-10-09T02:37:30.000Z",
       179
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -8483,7 +8483,7 @@
       "2025-10-09T02:37:28.000Z",
       178
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -8752,7 +8752,7 @@
       "2025-10-09T02:37:27.000Z",
       177
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=f655e63dce241bf53945f88232c20391 | SourceIP: 192.168.85.1 | SourcePort: 62214"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -9021,7 +9021,7 @@
       "2025-10-09T02:35:24.000Z",
       183
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=1+%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id=1+'+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 59653"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=1+%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id=1+'+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 59653"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -9290,7 +9290,7 @@
       "2025-10-09T02:35:19.000Z",
       182
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 59653"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 59653"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -9559,7 +9559,7 @@
       "2025-10-09T02:35:14.000Z",
       181
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 59653"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 59653"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -9828,7 +9828,7 @@
       "2025-10-09T02:32:55.000Z",
       186
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 55988"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 55988"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -10097,7 +10097,7 @@
       "2025-10-09T02:32:49.000Z",
       185
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 55988"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id='+OR+1=1+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 55988"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -10366,7 +10366,7 @@
       "2025-10-09T02:32:42.000Z",
       184
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 55988"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 55988"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -10635,7 +10635,7 @@
       "2025-10-09T02:30:43.000Z",
       187
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=95d01a5fa7a42f4076981fbad22f7af8 | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -10904,7 +10904,7 @@
       "2025-10-09T02:29:58.000Z",
       190
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=511825da8627fb60742d3ca1e6169d2a | Query: id='+OR+1=1+--&Submit=Submit&user_token=511825da8627fb60742d3ca1e6169d2a | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+--&Submit=Submit&user_token=511825da8627fb60742d3ca1e6169d2a | Query: id='+OR+1=1+--&Submit=Submit&user_token=511825da8627fb60742d3ca1e6169d2a | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -11173,7 +11173,7 @@
       "2025-10-09T02:29:53.000Z",
       189
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -11442,7 +11442,7 @@
       "2025-10-09T02:29:52.000Z",
       188
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -11711,7 +11711,7 @@
       "2025-10-09T02:29:22.000Z",
       191
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=admin%27+OR+%271%27%3D%271%27+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id=admin'+OR+'1'='1'+--&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -11980,7 +11980,7 @@
       "2025-10-09T02:29:16.000Z",
       196
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -12249,7 +12249,7 @@
       "2025-10-09T02:29:15.000Z",
       195
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -12518,7 +12518,7 @@
       "2025-10-09T02:29:13.000Z",
       194
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -12787,7 +12787,7 @@
       "2025-10-09T02:29:12.000Z",
       193
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.10.08-000004",
@@ -13056,7 +13056,7 @@
       "2025-10-09T02:29:08.000Z",
       192
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit&user_token=2a7467894417d6a2be8b3d8e17b34a7b | SourceIP: 192.168.85.1 | SourcePort: 50274"
   },
   {
     "_index": ".ds-logs-modsecurity.auditlog-default-2025.09.08-000003",
@@ -13325,6 +13325,6 @@
       "2025-09-30T02:28:19.000Z",
       5
     ],
-    "ml_input": "ModSecurity Alert: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit | SourceIP: 192.168.85.1 | SourcePort: 52128"
+    "ml_input": "ModSecurity: SQL Injection Attack Detected via libinjection; Inbound Anomaly Score Exceeded (Total Score: 5) | URL: http://dvwa.local:80/vulnerabilities/sqli/?id=%27+OR+1%3D1+LIMIT+1+--+-&Submit=Submit | Query: id='+OR+1=1+LIMIT+1+--+-&Submit=Submit | SourceIP: 192.168.85.1 | SourcePort: 52128"
   }
 ]

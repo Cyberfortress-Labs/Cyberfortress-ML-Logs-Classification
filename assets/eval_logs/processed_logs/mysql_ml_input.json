@@ -163,7 +163,7 @@
       "2025-09-08T04:25:51.712Z",
       31
     ],
-    "ml_input": "MySQL Warning: [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'elastic'. | Level: Warning"
+    "ml_input": "MySQL: [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'elastic'. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -329,7 +329,7 @@
       "2025-09-08T04:25:51.715Z",
       32
     ],
-    "ml_input": "MySQL Warning: [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 10  user: 'elastic'. | Level: Warning"
+    "ml_input": "MySQL: [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 10  user: 'elastic'. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -495,7 +495,7 @@
       "2025-09-08T04:26:28.096Z",
       9
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -661,7 +661,7 @@
       "2025-09-08T04:26:28.104Z",
       11
     ],
-    "ml_input": "MySQL Warning: [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory. | Level: Warning"
+    "ml_input": "MySQL: [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -827,7 +827,7 @@
       "2025-09-08T04:26:28.240Z",
       14
     ],
-    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+    "ml_input": "MySQL: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -993,7 +993,7 @@
       "2025-09-08T04:26:37.812Z",
       20
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -1159,7 +1159,7 @@
       "2025-09-08T04:26:37.832Z",
       22
     ],
-    "ml_input": "MySQL Warning: [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory. | Level: Warning"
+    "ml_input": "MySQL: [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.07.09-000002",
@@ -1325,7 +1325,7 @@
       "2025-09-08T04:26:44.522Z",
       4
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.09.08-000003",
@@ -1491,7 +1491,7 @@
       "2025-09-30T02:08:35.227Z",
       16
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.09.08-000003",
@@ -1657,7 +1657,7 @@
       "2025-09-30T02:17:06.933Z",
       6
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.09.08-000003",
@@ -1823,7 +1823,7 @@
       "2025-09-30T02:27:43.299Z",
       0
     ],
-    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+    "ml_input": "MySQL: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -1989,7 +1989,7 @@
       "2025-10-09T02:27:38.689Z",
       89
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -2155,7 +2155,7 @@
       "2025-10-09T02:28:59.013Z",
       84
     ],
-    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+    "ml_input": "MySQL: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -2321,7 +2321,7 @@
       "2025-10-12T08:05:09.469Z",
       80
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -2487,7 +2487,7 @@
       "2025-10-12T12:04:50.224Z",
       74
     ],
-    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+    "ml_input": "MySQL: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -2653,7 +2653,7 @@
       "2025-10-14T02:23:43.050Z",
       71
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -2819,7 +2819,7 @@
       "2025-10-14T04:51:10.180Z",
       61
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -2985,7 +2985,7 @@
       "2025-10-15T11:48:01.450Z",
       51
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -3151,7 +3151,7 @@
       "2025-10-16T12:42:49.829Z",
       44
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -3317,7 +3317,7 @@
       "2025-10-17T06:45:11.182Z",
       33
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -3483,7 +3483,7 @@
       "2025-10-27T06:09:01.632Z",
       23
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -3649,7 +3649,7 @@
       "2025-10-27T06:10:37.694Z",
       27
     ],
-    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+    "ml_input": "MySQL: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -3815,7 +3815,7 @@
       "2025-10-29T10:23:26.096Z",
       15
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -3981,7 +3981,7 @@
       "2025-10-31T02:42:01.223Z",
       7
     ],
-    "ml_input": "MySQL Warning: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
+    "ml_input": "MySQL: [MY-010068] [Server] CA certificate ca.pem is self signed. | Level: Warning"
   },
   {
     "_index": ".ds-logs-mysql.error-default-2025.10.08-000004",
@@ -4147,6 +4147,6 @@
       "2025-10-31T02:49:22.518Z",
       0
     ],
-    "ml_input": "MySQL Warning: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
+    "ml_input": "MySQL: [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead' | Level: Warning"
   }
 ]
