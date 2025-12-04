@@ -87,7 +87,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
         
         if event_type == 'alert' and safe_get_dot(ctx, 'rule', 'name') is not None:
             return (
-                f"Suricata Alert: {safe_get_dot(ctx, 'rule', 'name')}"
+                f"Suricata: {safe_get_dot(ctx, 'rule', 'name')}"
                 f" | Category: {safe_get_dot(ctx, 'rule', 'category', default='Unknown')}"
                 f" | {safe_get_dot(ctx, 'source', 'ip', default='-')}"
                 f" -> {safe_get_dot(ctx, 'destination', 'ip', default='-')}"
@@ -105,7 +105,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
         
         if safe_get_dot(ctx, 'rule', 'name') is not None and safe_get_dot(ctx, 'rule', 'description') is not None:
             return (
-                f"Zeek Alert: {safe_get_dot(ctx, 'rule', 'name')}"
+                f"Zeek: {safe_get_dot(ctx, 'rule', 'name')}"
                 f" | Description: {safe_get_dot(ctx, 'rule', 'description')}"
                 f" | Peer: {safe_get_dot(ctx, 'zeek', 'notice', 'peer_descr', default='-')}"
             )
@@ -136,7 +136,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
     
     # ========================= WAZUH =========================
     if safe_get_dot(ctx, 'rule', 'description') is not None and safe_get_dot(ctx, 'full_log') is not None:
-        return f"Alert: {safe_get_dot(ctx, 'rule', 'description')} | Log: {safe_get_dot(ctx, 'full_log')}"
+        return f"Wazuh: {safe_get_dot(ctx, 'rule', 'description')} | Log: {safe_get_dot(ctx, 'full_log')}"
     
     # ========================= APACHE =========================
     if 'apache' in idx:
@@ -156,7 +156,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
             return None
         
         return (
-            f"Apache Alert: {msg or '-'}"
+            f"Apache: {msg or '-'}"
             f" | Level: {level or '-'}"
             f" | Host: {safe_get_dot(ctx, 'host', 'hostname', default='-')}"
         )
@@ -166,7 +166,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
         level = safe_get_dot(ctx, 'log', 'level')
         if level is None or level != 'Warning':
             return None
-        return f"MySQL Warning: {safe_get_dot(ctx, 'message', default='-')} | Level: {level}"
+        return f"MySQL: {safe_get_dot(ctx, 'message', default='-')} | Level: {level}"
     
     # ========================= NGINX =========================
     if 'nginx' in idx:
@@ -180,7 +180,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
         if any(keyword in msg for keyword in skip_keywords):
             return None
         
-        return f"Nginx Error: {msg} | Level: {level}"
+        return f"Nginx: {msg} | Level: {level}"
     
     # ========================= FIREWALL =========================
     if safe_get_dot(ctx, 'observer', 'type') == 'firewall' and safe_get_dot(ctx, 'event', 'action') is not None:
@@ -218,7 +218,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
             return None
         
         return (
-            f"Windows Alert: {safe_get_dot(ctx, 'event', 'code', default='-')}"
+            f"Windows: {safe_get_dot(ctx, 'event', 'code', default='-')}"
             f" | Provider: {safe_get_dot(ctx, 'event', 'provider', default='-')}"
             f" | Message: {msg or '-'}"
         )
@@ -239,7 +239,7 @@ def process_log(ctx: Dict[str, Any], idx: str) -> str | None:
             msgs = str(messages)
         
         return (
-            f"ModSecurity Alert: {msgs}"
+            f"ModSecurity: {msgs}"
             f" | URL: {safe_get_dot(ctx, 'url', 'original', default='-')}"
             f" | Query: {query}"
             f" | SourceIP: {safe_get_dot(ctx, 'source', 'ip', default='-')}"

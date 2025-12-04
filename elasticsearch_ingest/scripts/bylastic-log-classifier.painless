@@ -35,7 +35,7 @@ if (idx.contains('suricata')) {
     // Suricata alert
     if (eventType == 'alert' && ctx.rule?.name != null) {
         ctx.ml_input =
-            'Suricata Alert: ' + ctx.rule.name +
+            'Suricata: ' + ctx.rule.name +
             ' | Category: ' + (ctx.rule?.category ?: 'Unknown') +
             ' | ' + (ctx.source?.ip ?: '-') +
             ' -> ' + (ctx.destination?.ip ?: '-');
@@ -57,7 +57,7 @@ if (idx.contains('zeek')) {
     // Must have both name + description (alert-level messages)
     if (ctx.rule?.name != null && ctx.rule?.description != null) {
         ctx.ml_input =
-            'Zeek Alert: ' + ctx.rule.name +
+            'Zeek: ' + ctx.rule.name +
             ' | Description: ' + ctx.rule.description +
             ' | Peer: ' + (ctx.zeek.notice.peer_descr ?: '-');
         return;
@@ -95,7 +95,7 @@ if (idx.contains('pfsense')) {
 
 // ========================= WAZUH =========================
 if (ctx.rule?.description != null && ctx.full_log != null) {
-    ctx.ml_input = 'Alert: ' + ctx.rule.description + ' | Log: ' + ctx.full_log;
+    ctx.ml_input = 'Wazuh: ' + ctx.rule.description + ' | Log: ' + ctx.full_log;
     return;
 }
 
@@ -125,7 +125,7 @@ if (idx.contains('apache')) {
     if (!isAlert) return; // skip normal apache logs
 
     ctx.ml_input =
-        "Apache Alert: " + (msg ?: "-") +
+        "Apache: " + (msg ?: "-") +
         " | Level: " + (level ?: "-") +
         " | Host: " + (ctx.host?.hostname ?: "-");
 
@@ -141,8 +141,7 @@ if (idx.contains('mysql')) {
     if (level == null || level != 'Warning') return;
 
     ctx.ml_input =
-        "MySQL Warning: " + (ctx.message ?: "-") +
-        " | Level: " + level;
+        "MySQL: " + (ctx.message ?: "-");
 
     return;
 }
@@ -167,8 +166,7 @@ if (idx.contains("nginx")) {
 
     // If got here → it's a real error
     ctx.ml_input =
-        "Nginx Error: " + msg +
-        " | Level: " + level;
+        "Nginx: " + msg;
 
     return;
 }
@@ -219,7 +217,7 @@ if (idx.contains('windows')) {
 
     // Build ML input
     ctx.ml_input =
-        'Windows Alert: ' +
+        'Windows: ' +
         (ctx.event?.code ?: '-') +
         ' | Provider: ' + (ctx.event?.provider ?: '-') +
         ' | Message: ' + (msg ?: '-');
@@ -241,7 +239,7 @@ if (idx.contains('modsecurity')) {
     String msgs = String.join("; ", ctx.modsec.audit.messages);
 
     ctx.ml_input =
-        "ModSecurity Alert: " + msgs +
+        "ModSecurity: " + msgs +
         " | URL: " + (ctx.url?.original ?: "-") +
         " | Query: " + query +
         " | SourceIP: " + (ctx.source?.ip ?: "-") +
