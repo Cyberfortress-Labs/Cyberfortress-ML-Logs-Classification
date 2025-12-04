@@ -1,0 +1,114 @@
+{
+  "timestamp": "2025-12-04T16:06:24.507415",
+  "input_dir": "d:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\assets\\logs\\ecs_logs",
+  "output_dir": "d:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\assets\\logs\\processed_logs",
+  "total_files": 9,
+  "successful": 9,
+  "failed": 0,
+  "total_documents": 2956,
+  "total_ml_input": 2081,
+  "total_skipped": 875,
+  "processing_time_seconds": 0.806453,
+  "failed_files": [],
+  "results": [
+    {
+      "input_file": "modsecurity.json",
+      "output_file": "modsecurity_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 49,
+        "ml_input": 49,
+        "skipped": 0,
+        "error": null
+      }
+    },
+    {
+      "input_file": "mysql.json",
+      "output_file": "mysql_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 25,
+        "ml_input": 25,
+        "skipped": 0,
+        "error": null
+      }
+    },
+    {
+      "input_file": "nginx.json",
+      "output_file": "nginx_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 67,
+        "ml_input": 7,
+        "skipped": 60,
+        "error": null
+      }
+    },
+    {
+      "input_file": "pfsense.json",
+      "output_file": "pfsense_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 500,
+        "ml_input": 500,
+        "skipped": 0,
+        "error": null
+      }
+    },
+    {
+      "input_file": "router.json",
+      "output_file": "router_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 500,
+        "ml_input": 0,
+        "skipped": 500,
+        "error": null
+      }
+    },
+    {
+      "input_file": "suricata.json",
+      "output_file": "suricata_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 500,
+        "ml_input": 500,
+        "skipped": 0,
+        "error": null
+      }
+    },
+    {
+      "input_file": "wazuh.json",
+      "output_file": "wazuh_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 500,
+        "ml_input": 500,
+        "skipped": 0,
+        "error": null
+      }
+    },
+    {
+      "input_file": "windows.json",
+      "output_file": "windows_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 500,
+        "ml_input": 500,
+        "skipped": 0,
+        "error": null
+      }
+    },
+    {
+      "input_file": "zeek.json",
+      "output_file": "zeek_ml_input.json",
+      "stats": {
+        "success": true,
+        "total": 315,
+        "ml_input": 0,
+        "skipped": 315,
+        "error": null
+      }
+    }
+  ]
+}

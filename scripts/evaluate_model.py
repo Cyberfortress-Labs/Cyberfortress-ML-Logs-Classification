@@ -24,6 +24,19 @@ tokenizer = None
 model = None
 device = None
 
+# Label mapping
+LABEL_MAP = {
+    0: "ERROR",
+    1: "WARNING", 
+    2: "INFO"
+}
+
+LABEL_DESCRIPTIONS = {
+    "ERROR": "Critical failures or serious problems requiring immediate attention",
+    "WARNING": "Potential issues that could become errors if not properly managed",
+    "INFO": "Informational logs about normal system functioning"
+}
+
 
 def init_worker(model_path):
     """Initialize model in each worker process"""
@@ -59,6 +72,7 @@ def predict_single(log_text):
         
         return {
             'predicted_class': predicted_class_id,
+            'predicted_label': LABEL_MAP.get(predicted_class_id, "UNKNOWN"),
             'confidence': confidence,
             'success': True,
             'error': None
@@ -359,16 +373,16 @@ Arguments:
 
 Examples:
     # Use defaults (5 workers)
-    python evaluate_model.py logs/ml_input.txt
+    python evaluate_model.py assets/input/eval_data.txt
     
     # Custom number of workers
-    python evaluate_model.py logs/ml_input.txt 10
+    python evaluate_model.py assets/input/eval_data.txt 10
     
     # Custom output directory
-    python evaluate_model.py logs/ml_input.txt 5 output
+    python evaluate_model.py assets/input/eval_data.txt 5 assets/eval_results
     
     # Full customization
-    python evaluate_model.py logs/ml_input.txt 8 results ./my_model
+    python evaluate_model.py assets/input/eval_data.txt 8 assets/eval_results ./my_model
 
 Note:
     - Input file format: Each line should have "ml_input : <text>"

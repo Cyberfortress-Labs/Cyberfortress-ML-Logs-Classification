@@ -1,0 +1,104 @@
+distilbert.embeddings.word_embeddings.weight                 | Shape: torch.Size([30522, 768])  | Params: 23,440,896
+distilbert.embeddings.position_embeddings.weight             | Shape: torch.Size([512, 768])    | Params: 393,216
+distilbert.embeddings.LayerNorm.weight                       | Shape: torch.Size([768])         | Params: 768
+distilbert.embeddings.LayerNorm.bias                         | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.attention.q_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.0.attention.q_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.attention.k_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.0.attention.k_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.attention.v_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.0.attention.v_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.attention.out_lin.weight      | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.0.attention.out_lin.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.sa_layer_norm.weight          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.sa_layer_norm.bias            | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.ffn.lin1.weight               | Shape: torch.Size([3072, 768])   | Params: 2,359,296
+distilbert.transformer.layer.0.ffn.lin1.bias                 | Shape: torch.Size([3072])        | Params: 3,072
+distilbert.transformer.layer.0.ffn.lin2.weight               | Shape: torch.Size([768, 3072])   | Params: 2,359,296
+distilbert.transformer.layer.0.ffn.lin2.bias                 | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.output_layer_norm.weight      | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.0.output_layer_norm.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.attention.q_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.1.attention.q_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.attention.k_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.1.attention.k_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.attention.v_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.1.attention.v_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.attention.out_lin.weight      | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.1.attention.out_lin.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.sa_layer_norm.weight          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.sa_layer_norm.bias            | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.ffn.lin1.weight               | Shape: torch.Size([3072, 768])   | Params: 2,359,296
+distilbert.transformer.layer.1.ffn.lin1.bias                 | Shape: torch.Size([3072])        | Params: 3,072
+distilbert.transformer.layer.1.ffn.lin2.weight               | Shape: torch.Size([768, 3072])   | Params: 2,359,296
+distilbert.transformer.layer.1.ffn.lin2.bias                 | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.output_layer_norm.weight      | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.1.output_layer_norm.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.attention.q_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.2.attention.q_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.attention.k_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.2.attention.k_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.attention.v_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.2.attention.v_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.attention.out_lin.weight      | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.2.attention.out_lin.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.sa_layer_norm.weight          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.sa_layer_norm.bias            | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.ffn.lin1.weight               | Shape: torch.Size([3072, 768])   | Params: 2,359,296
+distilbert.transformer.layer.2.ffn.lin1.bias                 | Shape: torch.Size([3072])        | Params: 3,072
+distilbert.transformer.layer.2.ffn.lin2.weight               | Shape: torch.Size([768, 3072])   | Params: 2,359,296
+distilbert.transformer.layer.2.ffn.lin2.bias                 | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.output_layer_norm.weight      | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.2.output_layer_norm.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.attention.q_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.3.attention.q_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.attention.k_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.3.attention.k_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.attention.v_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.3.attention.v_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.attention.out_lin.weight      | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.3.attention.out_lin.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.sa_layer_norm.weight          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.sa_layer_norm.bias            | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.ffn.lin1.weight               | Shape: torch.Size([3072, 768])   | Params: 2,359,296
+distilbert.transformer.layer.3.ffn.lin1.bias                 | Shape: torch.Size([3072])        | Params: 3,072
+distilbert.transformer.layer.3.ffn.lin2.weight               | Shape: torch.Size([768, 3072])   | Params: 2,359,296
+distilbert.transformer.layer.3.ffn.lin2.bias                 | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.output_layer_norm.weight      | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.3.output_layer_norm.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.attention.q_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.4.attention.q_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.attention.k_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.4.attention.k_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.attention.v_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.4.attention.v_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.attention.out_lin.weight      | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.4.attention.out_lin.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.sa_layer_norm.weight          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.sa_layer_norm.bias            | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.ffn.lin1.weight               | Shape: torch.Size([3072, 768])   | Params: 2,359,296
+distilbert.transformer.layer.4.ffn.lin1.bias                 | Shape: torch.Size([3072])        | Params: 3,072
+distilbert.transformer.layer.4.ffn.lin2.weight               | Shape: torch.Size([768, 3072])   | Params: 2,359,296
+distilbert.transformer.layer.4.ffn.lin2.bias                 | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.output_layer_norm.weight      | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.4.output_layer_norm.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.attention.q_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.5.attention.q_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.attention.k_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.5.attention.k_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.attention.v_lin.weight        | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.5.attention.v_lin.bias          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.attention.out_lin.weight      | Shape: torch.Size([768, 768])    | Params: 589,824
+distilbert.transformer.layer.5.attention.out_lin.bias        | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.sa_layer_norm.weight          | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.sa_layer_norm.bias            | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.ffn.lin1.weight               | Shape: torch.Size([3072, 768])   | Params: 2,359,296
+distilbert.transformer.layer.5.ffn.lin1.bias                 | Shape: torch.Size([3072])        | Params: 3,072
+distilbert.transformer.layer.5.ffn.lin2.weight               | Shape: torch.Size([768, 3072])   | Params: 2,359,296
+distilbert.transformer.layer.5.ffn.lin2.bias                 | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.output_layer_norm.weight      | Shape: torch.Size([768])         | Params: 768
+distilbert.transformer.layer.5.output_layer_norm.bias        | Shape: torch.Size([768])         | Params: 768
+pre_classifier.weight                                        | Shape: torch.Size([768, 768])    | Params: 589,824
+pre_classifier.bias                                          | Shape: torch.Size([768])         | Params: 768
+classifier.weight                                            | Shape: torch.Size([3, 768])      | Params: 2,304
+classifier.bias                                              | Shape: torch.Size([3])           | Params: 3

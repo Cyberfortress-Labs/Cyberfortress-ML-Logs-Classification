@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-12-04T15:25:30.392301",
-  "input_dir": "D:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\logs\\ecs_logs",
-  "output_dir": "D:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\logs\\ml_ready_logs",
+  "timestamp": "2025-12-04T15:57:35.541068",
+  "input_dir": "d:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\assets\\logs\\ecs_logs",
+  "output_dir": "d:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\assets\\logs\\processed_logs",
   "total_files": 9,
   "successful": 9,
   "failed": 0,
   "total_documents": 2956,
   "total_ml_input": 2081,
   "total_skipped": 875,
-  "processing_time_seconds": 0.795867,
+  "processing_time_seconds": 0.818594,
   "failed_files": [],
   "results": [
     {

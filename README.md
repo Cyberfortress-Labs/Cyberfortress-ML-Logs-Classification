@@ -1,157 +1,79 @@
 # Cyberfortress ML Logs Classification
 
-## Purpose
+**Purpose:** Lightweight toolkit to normalize diverse security logs into concise text inputs and label them using a text-classification model. The primary target is Elasticsearch ingest pipelines (Painless + inference processor), but the repo also includes local utilities for inspection and offline testing.
 
-Lightweight pipeline and model integration that converts diverse security logs into normalized text inputs and applies a text-classification model to label events (INFO, WARNING, ERROR).
-Designed primarily for Elasticsearch ingest pipelines but includes local utilities for inspection and evaluation.
+**Status:** Production-ready pipeline logic for common security telemetry (Suricata, Zeek, pfSense, ModSecurity, Apache, Nginx, MySQL, Windows, Wazuh). Local tooling is provided for development and evaluation.
 
-## Model Source
+## **Quick Summary**
+- **Repository:** Converts indexed logs into `ml.prediction.input` and runs a text classification model.
+- **Primary script:** `ingest/scripts/bylastic-log-classifier.painless` (constructs classifier input).
+- **Local CLI:** `classify_log.py` mirrors the Painless logic for offline testing.
+- **Extraction helper:** `scripts/prepare_ml_ready.py` extracts ML-ready logs from Elasticsearch-style JSON into `logs/ML-Ready-Logs`.
 
-This project uses the publicly available model:
-
-**HuggingFace:** [https://huggingface.co/byviz/bylastic_classification_logs](https://huggingface.co/byviz/bylastic_classification_logs)
-
-The model is developed and published by **byviz**.
-It is **not trained by this repository**; this project only integrates and utilizes it inside Elasticsearch or local tooling.
-
-## Overview
-
-**What it does:**
-Normalizes and filters logs from multiple sources (Suricata, Zeek, pfSense, ModSecurity, Apache, Nginx, MySQL, Windows, Wazuh), constructs a concise text description of each event, and applies a text-classification model to generate `ml.prediction`.
-
-**Key design choices:**
-
-* Per-source parsing logic implemented in `bylastic-log-classifier.painless`.
-* Uses a consistent inference input field: `ml.prediction.input`.
-* Inference processor configuration stored in `bylastic-log-classifier.json`.
-
-## Repository Layout
-
-```
-ingest/
-  pipelines/bylastic-log-classifier.json      # Ingest pipeline with script + inference processor
-  scripts/bylastic-log-classifier.painless  # Painless script constructing classifier text input
-  config-model.http                 # Example HTTP config (if present)
-
-model/
-  model.safetensors
-  config.json
-  special_tokens_map.json
-  tokenizer_config.json
-  tokenizer.json
-  vocab.txt
-
-logs/
-  classification_results.txt        # Example output
-  logs-test.log                     # Example input logs
-
-classify_log.py                     # CLI tool to classify a single log document locally
-inspect_model.py                    # Local model inspection utility
-performance_eval.py                 # Evaluation scripts
-main.py                             # Optional runner
-```
-
-## Requirements
-
-* Python 3.8+ (for local tooling)
-* Elasticsearch 8.x (for ingest pipeline + inference processor)
-* ML libraries if running inference locally:
-
-  * `transformers`
-  * `torch`
-  * `safetensors`
-    (See `inspect_model.py` for exact imports.)
-
-## Quick Setup (Local Inspection and Tests)
-
-Create a virtual environment and install packages:
+## **Getting Started**
+- **Requirements:**
+  - **Python**: 3.8+
+  - **Elasticsearch**: 8.x (for ingest pipeline + inference processor)
+  - Optional for local inference: `transformers`, `torch`, `safetensors`
+- **Install (local dev):**
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate   # on Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Inspect the model:
-
-```bash
-python inspect_model.py
-```
-
-Run evaluation (requires test dataset):
-
-```bash
-python performance_eval.py
-```
-
-Test classification on a single log document:
+## **Quick Usage**
+- Classify a single document (local):
 
 ```bash
 python classify_log.py --input sample_log.json
-# or pipe JSON from stdin
+# or pipe JSON
 cat sample_log.json | python classify_log.py
 ```
 
-Outputs JSON with `ml.prediction.input` set to the classifier text (if applicable).
-
-## Ingest Pipeline Notes
-
-* The Painless script writes classifier input to `ml.prediction.input`.
-* Inference processor uses:
-
-  * a `field_map` mapping `ml.prediction.input` → the model’s `text_field`,
-  * an `if` condition ensuring valid input before inference runs.
-
-To modify behavior:
-
-* Update `bylastic-log-classifier.painless` for input construction.
-* Update `bylastic-log-classifier.json` for mapping or logic changes.
-
-## Behavior and Troubleshooting
-
-* Only indices matched via substring-based checks in the script’s `hit` list are processed.
-* Some noisy events (e.g., low-value nginx notices) are intentionally skipped.
-* Existing `ml.prediction` fields are preserved unless the script explicitly overwrites them.
-
-To avoid inaccurate/stale predictions:
-
-* Clear `ctx.ml` when skipping irrelevant logs, or
-* Ensure earlier pipelines do not produce `ml.prediction`.
-
-Fallback behavior:
-
-* If no source matches, the script uses `message` or `event.original` as generic input.
-
-## Deploying the Ingest Pipeline to Elasticsearch
-
-Example command:
+- Extract ML-ready logs from an Elasticsearch hits file into `logs/ML-Ready-Logs`:
 
 ```bash
-curl -X PUT "http://localhost:9200/_ingest/pipeline/bylastic-log-classifier" \
-  -H 'Content-Type: application/json' \
-  -d @ingest/pipelines/bylastic-log-classifier.json
+python scripts/prepare_ml_ready.py --input logs/ECS-Logs/suricata.json
 ```
 
-Reference this pipeline via index templates or client-side configuration.
+The extractor writes `ml_ready.jsonl` and individual `doc_*.json` files into the output folder.
 
-## Evaluation and Metrics
+## **How It Works**
+- **Painless script** (`ingest/scripts/bylastic-log-classifier.painless`):
+  - Detects source index by substring (e.g., `suricata`, `zeek`, `nginx`).
+  - Applies per-source rules to build a short, human-readable text describing the event.
+  - Writes the result to `ctx.ml_input` (ingest) which maps to `ml.prediction.input` in the pipeline configuration.
+- **Inference processor** (`ingest/pipelines/bylastic-log-classifier.json`):
+  - Maps `ml.prediction.input` → model `text_field`.
+  - Runs only when valid input exists.
 
-Use `performance_eval.py` to compute precision, recall, F1, or custom metrics.
-Modify the script to match your dataset format.
+## **Design Choices & Behavior**
+- **Selective processing:** Only indices listed in the script's hit list are considered; noisy/common events (e.g., nginx notices, Suricata flows) are intentionally skipped.
+- **Field handling:** The local tools accept both raw JSON logs and Elasticsearch hit documents (they flatten `fields.*` and parse `event.original` when present).
+- **Output format:** Local classifier returns `{'ml': {'prediction': {'input': '...'}}}` for matched logs; the extractor attaches this under `_ml` in exported docs.
 
-## Extending / Customizing
+## **Troubleshooting**
+- **No matches from extractor:** Confirm the input file contains events the Painless script treats as alerts (e.g., Suricata `event_type == 'alert'` with `rule.name`). Many ES datasets contain flows/protocol events that are intentionally skipped.
+- **Stale `ml.prediction` in documents:** Either clear `ctx.ml` in the Painless script when skipping, or ensure earlier pipelines do not set `ml.prediction` prematurely.
 
-* Add a new log source:
-  Extend `bylastic-log-classifier.painless` with a new parsing block and include its index substring in the `hit` list.
-* Change model:
-  Replace contents in `model/` and update the Elasticsearch inference model with a matching `model_id`.
-  For local inference, point scripts to the new artifacts.
+## **Extending the Pipeline**
+- **Add a source:** Add an `if` block in `ingest/scripts/bylastic-log-classifier.painless` and include the index substring in the `hit` list.
+- **Change model:** Replace files in `model/` and update `bylastic-log-classifier.json` inference `model_id`. For local inference, update `inspect_model.py` with new artifact paths.
 
-## Contributing
+## **Files of Interest**
+- **`ingest/scripts/bylastic-log-classifier.painless`**: Painless script building the input text.
+- **`ingest/pipelines/bylastic-log-classifier.json`**: Ingest pipeline + inference config.
+- **`classify_log.py`**: Local CLI replicating Painless logic.
+- **`scripts/prepare_ml_ready.py`**: Pulls ML-ready docs from ES-formatted files.
 
-Fork the repository, create a feature branch, and submit a pull request.
-Keep changes focused and include minimal example logs under `logs/` when appropriate.
+## **Contributing**
+- Fork, create a feature branch, and open a pull request. Include minimal example logs and unit tests for added parsing logic.
 
-## License
-This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for details.
+## **License**
+- This project is licensed under the Apache License. See `LICENSE` for details.
+
+---
+If you want, I can also add a short `DEVNOTES.md` with developer tips (how to run the pipeline locally, test new Painless rules, and format sample ES hits). 
 
