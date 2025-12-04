@@ -45,6 +45,7 @@ logs/
   classification_results.txt        # Example output
   logs-test.log                     # Example input logs
 
+classify_log.py                     # CLI tool to classify a single log document locally
 inspect_model.py                    # Local model inspection utility
 performance_eval.py                 # Evaluation scripts
 main.py                             # Optional runner
@@ -83,12 +84,22 @@ Run evaluation (requires test dataset):
 python performance_eval.py
 ```
 
+Test classification on a single log document:
+
+```bash
+python classify_log.py --input sample_log.json
+# or pipe JSON from stdin
+cat sample_log.json | python classify_log.py
+```
+
+Outputs JSON with `ml.prediction.input` set to the classifier text (if applicable).
+
 ## Ingest Pipeline Notes
 
-* The Painless script writes classifier input to `ml_input`.
+* The Painless script writes classifier input to `ml.prediction.input`.
 * Inference processor uses:
 
-  * a `field_map` mapping `ml_input` → the model’s `text_field`,
+  * a `field_map` mapping `ml.prediction.input` → the model’s `text_field`,
   * an `if` condition ensuring valid input before inference runs.
 
 To modify behavior:
@@ -104,7 +115,7 @@ To modify behavior:
 
 To avoid inaccurate/stale predictions:
 
-* Clear `ctx.ml_input` when skipping irrelevant logs, or
+* Clear `ctx.ml` when skipping irrelevant logs, or
 * Ensure earlier pipelines do not produce `ml.prediction`.
 
 Fallback behavior:
