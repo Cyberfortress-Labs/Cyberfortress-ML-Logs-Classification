@@ -1,5 +1,5 @@
 
-# **Cyberfortress ML Logs Classification**
+# **Cyberfortress Machine Learning Logs Classification**
 
 A machine-learning–powered log classification system designed to normalize multi-source security logs (Suricata, Zeek, pfSense, ModSecurity, Apache, Nginx, MySQL, Windows, Wazuh, etc.) and predict their severity level: **ERROR**, **WARNING**, or **INFO**.
 
