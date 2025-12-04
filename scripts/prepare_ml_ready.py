@@ -323,16 +323,16 @@ Usage:
 
 Arguments:
     input_dir   Directory containing input JSON files (required)
-    output_dir  Directory to save processed files (default: assets/logs/processed_logs)
+    output_dir  Directory to save processed files (default: assets/eval_logs/processed_logs)
 
 Example:
-    python prepare_ml_ready.py assets/logs/ecs_logs
-    python prepare_ml_ready.py assets/logs/ecs_logs assets/logs/processed_logs
+    python prepare_ml_ready.py assets/eval_logs/ecs_logs
+    python prepare_ml_ready.py assets/eval_logs/ecs_logs assets/eval_logs/processed_logs
 """)
         sys.exit(1)
     
     input_dir = sys.argv[1]
-    output_dir = sys.argv[2] if len(sys.argv) >= 3 else 'assets/logs/processed_logs'
+    output_dir = sys.argv[2] if len(sys.argv) >= 3 else 'assets/eval_logs/processed_logs'
     
     input_path = Path(input_dir)
     output_path = Path(output_dir)

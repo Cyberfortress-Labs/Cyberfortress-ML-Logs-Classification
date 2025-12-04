@@ -81,6 +81,7 @@ def predict_single(log_text):
     except Exception as e:
         return {
             'predicted_class': -1,
+            'predicted_label': "ERROR_PREDICTION",
             'confidence': 0.0,
             'success': False,
             'error': str(e)
@@ -98,6 +99,7 @@ def predict_batch(args):
         'index': idx,
         'ml_input': log_text,
         'predicted_class': result['predicted_class'],
+        'predicted_label': result['predicted_label'],
         'confidence': result['confidence'],
         'latency_ms': latency * 1000,
         'success': result['success'],
@@ -244,11 +246,14 @@ def evaluate_model(
     
     throughput = len(logs) / total_time
     
-    # Count predictions by class
+    # Count predictions by class and label
     class_counts = {}
+    label_counts = {}
     for r in successful:
         class_id = r['predicted_class']
+        label = r['predicted_label']
         class_counts[class_id] = class_counts.get(class_id, 0) + 1
+        label_counts[label] = label_counts.get(label, 0) + 1
     
     # Prepare summary
     summary = {
@@ -256,7 +261,9 @@ def evaluate_model(
             'timestamp': datetime.now().isoformat(),
             'input_file': str(input_path.absolute()),
             'model_path': str(Path(model_path).absolute()),
-            'num_workers': num_workers
+            'num_workers': num_workers,
+            'label_mapping': LABEL_MAP,
+            'label_descriptions': LABEL_DESCRIPTIONS
         },
         'statistics': {
             'total_logs': len(logs),
@@ -272,7 +279,8 @@ def evaluate_model(
                 'p95_ms': p95_latency,
                 'p99_ms': p99_latency
             },
-            'class_distribution': class_counts
+            'class_distribution': class_counts,
+            'label_distribution': label_counts
         },
         'results': results
     }
@@ -313,11 +321,27 @@ def evaluate_model(
         f.write(f"P99:           {summary['statistics']['latency']['p99_ms']:.2f} ms\n")
         f.write("\n")
         f.write("-" * 70 + "\n")
+        f.write("LABEL CATEGORIES\n")
+        f.write("-" * 70 + "\n")
+        for label, desc in LABEL_DESCRIPTIONS.items():
+            f.write(f"{label}:\n")
+            f.write(f"  {desc}\n")
+        f.write("\n")
+        f.write("-" * 70 + "\n")
+        f.write("PREDICTION DISTRIBUTION\n")
+        f.write("-" * 70 + "\n")
+        for label in ["ERROR", "WARNING", "INFO"]:
+            count = label_counts.get(label, 0)
+            percentage = count / len(successful) * 100 if successful else 0
+            f.write(f"{label:10s} {count:6d} ({percentage:5.1f}%)\n")
+        f.write("\n")
+        f.write("-" * 70 + "\n")
         f.write("CLASS DISTRIBUTION\n")
         f.write("-" * 70 + "\n")
         for class_id, count in sorted(class_counts.items()):
+            label = LABEL_MAP.get(class_id, "UNKNOWN")
             percentage = count / len(successful) * 100
-            f.write(f"Class {class_id}:      {count:6d} ({percentage:5.1f}%)\n")
+            f.write(f"Class {class_id} ({label:7s}): {count:6d} ({percentage:5.1f}%)\n")
         f.write("\n")
         
         if failed:
@@ -348,10 +372,17 @@ def evaluate_model(
     print(f"P95 latency:   {p95_latency:.2f} ms")
     print(f"P99 latency:   {p99_latency:.2f} ms")
     print()
+    print("Prediction distribution:")
+    for label in ["ERROR", "WARNING", "INFO"]:
+        count = label_counts.get(label, 0)
+        percentage = count / len(successful) * 100 if successful else 0
+        print(f"  {label:10s} {count:6d} ({percentage:5.1f}%)")
+    print()
     print("Class distribution:")
     for class_id, count in sorted(class_counts.items()):
+        label = LABEL_MAP.get(class_id, "UNKNOWN")
         percentage = count / len(successful) * 100
-        print(f"  Class {class_id}: {count:6d} ({percentage:5.1f}%)")
+        print(f"  Class {class_id} ({label:7s}): {count:6d} ({percentage:5.1f}%)")
     print("=" * 70)
 
 
@@ -373,16 +404,16 @@ Arguments:
 
 Examples:
     # Use defaults (5 workers)
-    python evaluate_model.py assets/input/eval_data.txt
+    python evaluate_model.py assets/eval_input/eval_data.txt
     
     # Custom number of workers
-    python evaluate_model.py assets/input/eval_data.txt 10
+    python evaluate_model.py assets/eval_input/eval_data.txt 10
     
     # Custom output directory
-    python evaluate_model.py assets/input/eval_data.txt 5 assets/eval_results
+    python evaluate_model.py assets/eval_input/eval_data.txt 5 assets/eval_results
     
     # Full customization
-    python evaluate_model.py assets/input/eval_data.txt 8 assets/eval_results ./my_model
+    python evaluate_model.py assets/eval_input/eval_data.txt 8 assets/eval_results ./my_model
 
 Note:
     - Input file format: Each line should have "ml_input : <text>"

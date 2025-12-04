@@ -50,7 +50,7 @@ def extract_ml_inputs_from_file(file_path: Path) -> list:
 
 
 def extract_all_ml_inputs(
-    input_dir: str = 'assets/logs/processed_logs',
+    input_dir: str = 'assets/eval_logs/processed_logs',
     output_file: str = 'logs/ml_input.json',
     include_metadata: bool = True
 ):
@@ -191,8 +191,8 @@ Usage:
     python extract_ml_input.py [input_dir] [output_file] [--simple]
 
 Arguments:
-    input_dir    Directory with processed JSON files (default: assets/logs/processed_logs)
-    output_file  Output JSON file path (default: assets/input/ml_input.json)
+    input_dir    Directory with processed JSON files (default: assets/eval_logs/processed_logs)
+    output_file  Output JSON file path (default: assets/eval_input/ml_input.json)
     --simple     Output simple format (just ml_input strings, no metadata)
 
 Examples:
@@ -200,16 +200,16 @@ Examples:
     python extract_ml_input.py
     
     # Custom paths
-    python extract_ml_input.py assets/logs/processed_logs assets/input/eval_data.json
+    python extract_ml_input.py assets/eval_logs/processed_logs assets/eval_input/eval_data.json
     
     # Simple format (no metadata)
-    python extract_ml_input.py assets/logs/processed_logs assets/input/eval_data.txt --simple-txt
+    python extract_ml_input.py assets/eval_logs/processed_logs assets/eval_input/eval_data.txt --simple-txt
 """)
         sys.exit(1)
     
     # Parse arguments
-    input_dir = sys.argv[1] if len(sys.argv) >= 2 else 'assets/logs/processed_logs'
-    output_file = sys.argv[2] if len(sys.argv) >= 3 else 'assets/input/eval_data.json'
+    input_dir = sys.argv[1] if len(sys.argv) >= 2 else 'assets/eval_logs/processed_logs'
+    output_file = sys.argv[2] if len(sys.argv) >= 3 else 'assets/eval_input/eval_data.json'
     if '--simple-txt' in sys.argv:
         include_metadata = False
     elif '--simple' in sys.argv:

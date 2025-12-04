@@ -1,79 +1,113 @@
-# Cyberfortress ML Logs Classification
 
-**Purpose:** Lightweight toolkit to normalize diverse security logs into concise text inputs and label them using a text-classification model. The primary target is Elasticsearch ingest pipelines (Painless + inference processor), but the repo also includes local utilities for inspection and offline testing.
+# **Cyberfortress ML Logs Classification**
 
-**Status:** Production-ready pipeline logic for common security telemetry (Suricata, Zeek, pfSense, ModSecurity, Apache, Nginx, MySQL, Windows, Wazuh). Local tooling is provided for development and evaluation.
+A machine-learning–powered log classification system designed to normalize multi-source security logs (Suricata, Zeek, pfSense, ModSecurity, Apache, Nginx, MySQL, Windows, Wazuh, etc.) and predict their severity level: **ERROR**, **WARNING**, or **INFO**.
 
-## **Quick Summary**
-- **Repository:** Converts indexed logs into `ml.prediction.input` and runs a text classification model.
-- **Primary script:** `ingest/scripts/bylastic-log-classifier.painless` (constructs classifier input).
-- **Local CLI:** `classify_log.py` mirrors the Painless logic for offline testing.
-- **Extraction helper:** `scripts/prepare_ml_ready.py` extracts ML-ready logs from Elasticsearch-style JSON into `logs/ML-Ready-Logs`.
 
-## **Getting Started**
-- **Requirements:**
-  - **Python**: 3.8+
-  - **Elasticsearch**: 8.x (for ingest pipeline + inference processor)
-  - Optional for local inference: `transformers`, `torch`, `safetensors`
-- **Install (local dev):**
+
+## **Installation**
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # on Windows: .venv\Scripts\activate
+source .venv/bin/activate       # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## **Quick Usage**
-- Classify a single document (local):
+
+
+## **Workflow Overview**
+
+(See `main.ipynb` for the full pipeline)
 
 ```bash
-python classify_log.py --input sample_log.json
-# or pipe JSON
-cat sample_log.json | python classify_log.py
+# 1. Download the model
+python scripts/get_model.py --model_dir ./model
+
+# 2. Inspect the model
+python scripts/inspect_model.py --model_dir ./model --output_res ./inspect
+
+# 3. Normalize logs (ECS logs → ML-ready logs)
+python scripts/prepare_ml_ready.py assets/eval_logs/ecs_logs assets/eval_logs/processed_logs
+
+# 4. Extract ML input text file
+python scripts/extract_logs_for_ml.py assets/eval_logs/processed_logs assets/eval_input/eval_data.txt --simple-txt
+
+# 5. Run inference evaluation
+python scripts/evaluate_model.py assets/eval_input/eval_data.txt 12 assets/eval_results
+
+# 6. Visualize results
+python scripts/visualize_results.py --input assets/eval_results/eval_eval_data_20251204_162317.json --output assets/eval_charts
 ```
 
-- Extract ML-ready logs from an Elasticsearch hits file into `logs/ML-Ready-Logs`:
+
+## **Project Structure**
+
+```
+ingest/                 # Elasticsearch ingest pipeline + Painless script
+  pipelines/            # bylastic-log-classifier.json
+  scripts/              # bylastic-log-classifier.painless
+
+model/                  # Downloaded model artifacts (safetensors, config, tokenizer)
+
+scripts/
+  prepare_ml_ready.py        # Convert ECS → ML-ready logs
+  extract_logs_for_ml.py     # Consolidate ml_input fields
+  evaluate_model.py          # Run inference
+  visualize_results.py       # Plot evaluation charts
+  inspect_model.py           # Model metadata inspection
+  get_model.py               # Download HF model
+
+assets/
+  eval_logs/
+    ecs_logs/               # Raw ECS logs (Suricata, Zeek, etc.)
+    processed_logs/         # Normalized logs for ML
+  eval_input/               # Plain-text model input
+  eval_results/             # Inference results (JSON)
+  eval_charts/              # Visualization output
+```
+
+
+
+## **Elasticsearch Integration**
+
+For detailed documentation, refer to:
+https://www.elastic.co/docs/reference/elasticsearch/clients/eland/machine-learning#ml-nlp-pytorch-docker
+
+Eland provides a command-line interface that allows you to **import HuggingFace PyTorch NLP models directly into Elasticsearch**, enabling built-in inference (text classification, embeddings, etc.) without needing an external ML service.
+
+Below is an example command demonstrating how to import a model into Elasticsearch using `eland_import_hub_model`.
+All credentials are replaced with placeholders:
 
 ```bash
-python scripts/prepare_ml_ready.py --input logs/ECS-Logs/suricata.json
+eland_import_hub_model \
+  --url https://<ELASTICSEARCH_HOST>:9200 \
+  --es-username <USERNAME> \
+  --es-password "<PASSWORD>" \
+  --hub-model-id byviz/bylastic_classification_logs \
+  --task-type text_classification \
+  --start \
+  --insecure \ # Use this flag if you have self-signed SSL certificates
 ```
 
-The extractor writes `ml_ready.jsonl` and individual `doc_*.json` files into the output folder.
+### What this command does
 
-## **How It Works**
-- **Painless script** (`ingest/scripts/bylastic-log-classifier.painless`):
-  - Detects source index by substring (e.g., `suricata`, `zeek`, `nginx`).
-  - Applies per-source rules to build a short, human-readable text describing the event.
-  - Writes the result to `ctx.ml_input` (ingest) which maps to `ml.prediction.input` in the pipeline configuration.
-- **Inference processor** (`ingest/pipelines/bylastic-log-classifier.json`):
-  - Maps `ml.prediction.input` → model `text_field`.
-  - Runs only when valid input exists.
+* Connects to your Elasticsearch instance
+* Downloads the HuggingFace model `byviz/bylastic_classification_logs`
+* Converts it to an Elasticsearch-compatible format
+* Creates and registers the model under the ML Inference API
+* Starts the model so it can be used in ingest pipelines, search pipelines, or `_infer` APIs
 
-## **Design Choices & Behavior**
-- **Selective processing:** Only indices listed in the script's hit list are considered; noisy/common events (e.g., nginx notices, Suricata flows) are intentionally skipped.
-- **Field handling:** The local tools accept both raw JSON logs and Elasticsearch hit documents (they flatten `fields.*` and parse `event.original` when present).
-- **Output format:** Local classifier returns `{'ml': {'prediction': {'input': '...'}}}` for matched logs; the extractor attaches this under `_ml` in exported docs.
 
-## **Troubleshooting**
-- **No matches from extractor:** Confirm the input file contains events the Painless script treats as alerts (e.g., Suricata `event_type == 'alert'` with `rule.name`). Many ES datasets contain flows/protocol events that are intentionally skipped.
-- **Stale `ml.prediction` in documents:** Either clear `ctx.ml` in the Painless script when skipping, or ensure earlier pipelines do not set `ml.prediction` prematurely.
 
-## **Extending the Pipeline**
-- **Add a source:** Add an `if` block in `ingest/scripts/bylastic-log-classifier.painless` and include the index substring in the `hit` list.
-- **Change model:** Replace files in `model/` and update `bylastic-log-classifier.json` inference `model_id`. For local inference, update `inspect_model.py` with new artifact paths.
+## **Model Information**
 
-## **Files of Interest**
-- **`ingest/scripts/bylastic-log-classifier.painless`**: Painless script building the input text.
-- **`ingest/pipelines/bylastic-log-classifier.json`**: Ingest pipeline + inference config.
-- **`classify_log.py`**: Local CLI replicating Painless logic.
-- **`scripts/prepare_ml_ready.py`**: Pulls ML-ready docs from ES-formatted files.
+* **Model:** `byviz/bylastic_classification_logs` (HuggingFace)
+* **Output labels:** `ERROR` | `WARNING` | `INFO`
+* **Input:** Normalized logs processed by the Painless script + ML preprocessing pipeline
 
-## **Contributing**
-- Fork, create a feature branch, and open a pull request. Include minimal example logs and unit tests for added parsing logic.
+
 
 ## **License**
-- This project is licensed under the Apache License. See `LICENSE` for details.
 
----
-If you want, I can also add a short `DEVNOTES.md` with developer tips (how to run the pipeline locally, test new Painless rules, and format sample ES hits). 
+See `LICENSE` file for details.
 
