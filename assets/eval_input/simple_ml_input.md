@@ -47,7 +47,6 @@
 ### II. Level: CAUTION/PENDING/ATTENTION
 
 
-
 41. `ml_input: CAUTION: CPU utilization approaching threshold (85%). | Log: OSMonitor: CPU peak 86.5% detected at 10:41:01. Scaling might be needed.`
 42. `ml_input: PENDING: Database query taking longer than expected (15s). | Log: 2025-12-04 10:41:02 [DBExec] Long running query detected (PID 456).`
 43. `ml_input: ATTENTION: Disk space running low on volume /var/log (90% full). | Log: FileSystem: Low disk space alert. Free space 10GB.`

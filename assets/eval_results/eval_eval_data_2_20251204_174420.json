@@ -1,0 +1,965 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-04T17:44:44.577945",
+    "input_file": "d:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\assets\\eval_input\\eval_data_2.txt",
+    "model_path": "d:\\Documents\\UIT\\Nam_4\\NT505_KLTN\\Cyberfortress-Src\\Cyberfortress-ML-Logs-Classification\\model",
+    "num_workers": 12,
+    "label_mapping": {
+      "0": "ERROR",
+      "1": "WARNING",
+      "2": "INFO"
+    },
+    "label_descriptions": {
+      "ERROR": "Critical failures or serious problems requiring immediate attention",
+      "WARNING": "Potential issues that could become errors if not properly managed",
+      "INFO": "Informational logs about normal system functioning"
+    }
+  },
+  "statistics": {
+    "total_logs": 92,
+    "successful": 92,
+    "failed": 0,
+    "total_time_seconds": 23.722866773605347,
+    "throughput_logs_per_second": 3.8781147690953395,
+    "latency": {
+      "avg_ms": 311.8613077246624,
+      "min_ms": 52.02841758728027,
+      "max_ms": 1089.3235206604004,
+      "p50_ms": 266.59345626831055,
+      "p95_ms": 800.2434849739075,
+      "p99_ms": 864.4771695137032
+    },
+    "class_distribution": {
+      "1": 70,
+      "2": 12,
+      "0": 10
+    },
+    "label_distribution": {
+      "WARNING": 70,
+      "INFO": 12,
+      "ERROR": 10
+    }
+  },
+  "results": [
+    {
+      "index": 0,
+      "ml_input": "NOTICE: Successful configuration reload for proxy service. | Log: [2025-12-04 10:40:01] 7890: Configuratioml_input: ACCESS: User 'alice' downloaded report 'Q3_Sales.pdf'. | Log: 192.168.1.10 - alice [04/Dec/2025:10:40:02ml_input: DEBUG: Function 'calculate_checksum' called with input 12345. | Log: {\"time\": \"2025-12-04T10:40:03Z\", \"component\": \"CoreLogic\", \"level\": \"DEBUGml_input: NOTICE: Database connection pool size increased to 50. | Log: 2025-12-04 10:40:04 [DBManager] Connectml_input: ACCESS: New user session created for guest user. | Log: SessionHandler: Seml_input: DEBUG: Processing item 1 of 100 in background queue. | Log: Quml_input: NOTICE: System health check passed for all critical services. | Log: HealthMonitor: Alml_input: ACCESS: Successful API key validation for client 'MobileApp'. | Log: API-Gateway: Key k_ml_input: DEBUG: Cache hit for request URI /assets/style.css. | Log: CacheEngine: Served file from memory cache. ETag: W/\"9a0c-619f79b3\".",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.764353334903717,
+      "latency_ms": 1089.3235206604004,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 1,
+      "ml_input": "NOTICE: Scheduled job 'cleanup_old_data' started execution. | Log: TaskScheduler: Job cleanup_old_data started at 10:40:10. Total records to process: 15000.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8365771174430847,
+      "latency_ms": 488.64150047302246,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 2,
+      "ml_input": "ACCESS: User 'bob' updated their profile picture. | Log: 172.16.0.2 - bob [04/Dec/2025:10:40:11 +0700] \"POST /profile/update_avatar\" 200 350",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.9510403871536255,
+      "latency_ms": 414.243221282959,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 3,
+      "ml_input": "DEBUG: Load balancer forwarded request to server node 'web-02'. | Log: LB: Request routed to node web-02. Latency: 12ms.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.7143240571022034,
+      "latency_ms": 185.22095680236816,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 4,
+      "ml_input": "NOTICE: Certificate for domain 'api.example.com' checked and valid until 2026-12-04. | Log: CertMonitor: TLS certificate status is OK.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.6476249098777771,
+      "latency_ms": 179.3980598449707,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 5,
+      "ml_input": "ACCESS: Successful connection established on port 8080. | Log: Systemd: Service 'app_server.service' received 1 new connection.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.6932790279388428,
+      "latency_ms": 226.46474838256836,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 6,
+      "ml_input": "DEBUG: Memory usage within acceptable limits (45% total). | Log: OSMonitor: Memory utilization is currently 45.1%.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9362463355064392,
+      "latency_ms": 223.32286834716797,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 7,
+      "ml_input": "NOTICE: Data synchronization process initiated for external storage. | Log: SyncEngine: Initiating delta synchronization with S3 bucket 'data-archive'.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9283546805381775,
+      "latency_ms": 295.70460319519043,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 8,
+      "ml_input": "ACCESS: Read operation on file '/etc/config.yaml' successful. | Log: FileSystem: Read file config.yaml. Size: 1024 bytes.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.7511981129646301,
+      "latency_ms": 191.50662422180176,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 9,
+      "ml_input": "DEBUG: Environment variables loaded correctly from '.env' file. | Log: EnvLoader: Loaded 15 configuration variables.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.8299885392189026,
+      "latency_ms": 52.02841758728027,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 10,
+      "ml_input": "NOTICE: Application server started on port 8000. | Log: Main: Application listening on http://0.0.0.0:8000.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8259503841400146,
+      "latency_ms": 811.19704246521,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 11,
+      "ml_input": "ACCESS: Ping request received and responded successfully. | Log: ICMP: 10.0.0.5 sent a ping, response time 1ms.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.865044116973877,
+      "latency_ms": 352.57554054260254,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 12,
+      "ml_input": "DEBUG: Loop iteration 5 of 20 completed in module 'ReportGen'. | Log: ReportGen: Processing block 5/20.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.595102071762085,
+      "latency_ms": 344.39873695373535,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 13,
+      "ml_input": "NOTICE: Backup job completed successfully. 50GB data backed up. | Log: BackupAgent: Backup ID 20251204_01 finished without issues.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8809828162193298,
+      "latency_ms": 202.23402976989746,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 14,
+      "ml_input": "ACCESS: User 'charlie' viewed the pricing page. | Log: 203.0.113.20 - charlie [04/Dec/2025:10:40:23 +0700] \"GET /pricing\" 200 8900",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.517280638217926,
+      "latency_ms": 401.9355773925781,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 15,
+      "ml_input": "DEBUG: Successfully parsed JSON payload of size 2KB. | Log: PayloadParser: JSON structure verified.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.7986038327217102,
+      "latency_ms": 179.57139015197754,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 16,
+      "ml_input": "NOTICE: System time synchronized with NTP server 'ntp.pool.org'. | Log: Chrony: Time offset corrected by 0.001 seconds.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.922450065612793,
+      "latency_ms": 187.06297874450684,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 17,
+      "ml_input": "ACCESS: OAuth token refreshed successfully for integration 'Slack'. | Log: AuthService: Token refreshed for client_id 987.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.9703568816184998,
+      "latency_ms": 260.0421905517578,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 18,
+      "ml_input": "DEBUG: Skipping idle connection cleanup in database pool. | Log: DBConnection: Connection 12 is still active.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8620471954345703,
+      "latency_ms": 240.7388687133789,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 19,
+      "ml_input": "NOTICE: Feature flag 'new_ui_enabled' is set to TRUE globally. | Log: FeatureToggle: Flag new_ui_enabled is ON.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8005344271659851,
+      "latency_ms": 225.52847862243652,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 20,
+      "ml_input": "ACCESS: Successful file upload: 'profile_pic.jpg'. | Log: FileStorage: User 100 loaded file profile_pic.jpg (1.5MB).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.7137246131896973,
+      "latency_ms": 807.7704906463623,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 21,
+      "ml_input": "DEBUG: Waiting for response from external service 'PaymentProvider'. Timeout set to 5s. | Log: ExternalAPI: Waiting for service P_001.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8602877259254456,
+      "latency_ms": 356.57644271850586,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 22,
+      "ml_input": "NOTICE: Resource utilization returned to normal levels after peak usage. | Log: Monitor: CPU usage dropped to 15%.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.978116512298584,
+      "latency_ms": 340.39783477783203,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 23,
+      "ml_input": "ACCESS: User 'david' logged out of the system. | Log: SessionHandler: Session ID 5f9a3b2d terminated.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.8831551671028137,
+      "latency_ms": 205.2478790283203,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 24,
+      "ml_input": "DEBUG: Setting default values for empty fields in configuration object. | Log: ConfigLoader: Applied default value '10' to max_attempts.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.6353124976158142,
+      "latency_ms": 290.41004180908203,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 25,
+      "ml_input": "NOTICE: Index rebuild for table 'products' completed successfully. | Log: Indexer: Rebuild of 'products' index finished in 5 minutes.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.7682538628578186,
+      "latency_ms": 186.91349029541016,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 26,
+      "ml_input": "ACCESS: Internal health check request from 'Monitor-Service'. | Log: 127.0.0.1 - [04/Dec/2025:10:40:35 +0700] \"GET /healthz\" 200 12",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.5422203540802002,
+      "latency_ms": 293.4377193450928,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 27,
+      "ml_input": "DEBUG: Skipping message processing due to 'is_test' flag. | Log: MessageBroker: Message ID M_555 marked as test.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.46763095259666443,
+      "latency_ms": 262.85815238952637,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 28,
+      "ml_input": "NOTICE: New server instance 'app-03' successfully registered in load balancer pool. | Log: LB-Control: Registered app-03:8000.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.633704423904419,
+      "latency_ms": 247.8623390197754,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 29,
+      "ml_input": "ACCESS: Successful creation of new customer record ID: CUST_1000. | Log: CRMService: New record CUST_1000 created by user 'admin'.",
+      "predicted_class": 2,
+      "predicted_label": "INFO",
+      "confidence": 0.8614150285720825,
+      "latency_ms": 218.40834617614746,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 30,
+      "ml_input": "DEBUG: Database query execution time: 120ms (acceptable). | Log: DBStats: Query QID_789 completed in 120ms.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.6653245687484741,
+      "latency_ms": 810.7907772064209,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 31,
+      "ml_input": "NOTICE: All system queues are empty and waiting for new tasks. | Log: QueueMonitor: All 3 queues are idle.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9618247151374817,
+      "latency_ms": 355.8077812194824,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 32,
+      "ml_input": "CAUTION: CPU utilization approaching threshold (85%). | Log: OSMonitor: CPU peak 86.5% detected at 10:41:01. Scaling might be needed.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9863457083702087,
+      "latency_ms": 344.2254066467285,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 33,
+      "ml_input": "PENDING: Database query taking longer than expected (15s). | Log: 2025-12-04 10:41:02 [DBExec] Long running query detected (PID 456).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9637472033500671,
+      "latency_ms": 411.14258766174316,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 34,
+      "ml_input": "ATTENTION: Disk space running low on volume /var/log (90% full). | Log: FileSystem: Low disk space alert. Free space 10GB.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9765896201133728,
+      "latency_ms": 194.9746608734131,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 35,
+      "ml_input": "CAUTION: External API response time degraded (4500ms). | Log: ExternalAPI: Latency for service P_001 is 4.5s (above 2.0s threshold).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9853743314743042,
+      "latency_ms": 290.7893657684326,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 36,
+      "ml_input": "PENDING: Retrying failed message due to transient network issue. Retry attempt 1/3. | Log: MessageBroker: Failed to send M_678. Retrying in 5 seconds.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8140178918838501,
+      "latency_ms": 368.53504180908203,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 37,
+      "ml_input": "ATTENTION: Invalid password attempt for user 'eve' from unknown IP. | Log: AUDIT: Failed login for 'eve' from 52.87.12.34.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8852105140686035,
+      "latency_ms": 287.092924118042,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 38,
+      "ml_input": "CAUTION: Certificate for 'data-collector.com' expires in 15 days. | Log: CertMonitor: Expiration upcoming. Renew before 2025-12-19.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9629948735237122,
+      "latency_ms": 167.09613800048828,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 39,
+      "ml_input": "PENDING: Load balancer detected a node failure; traffic temporarily rerouted. | Log: LB: Node web-01 marked as unhealthy. Rerouting traffic to web-02 and web-03.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9089028239250183,
+      "latency_ms": 87.06283569335938,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 40,
+      "ml_input": "ATTENTION: Deprecated API endpoint accessed by client 'OldSystem'. | Log: API-Gateway: Access to deprecated route /v1/old_endpoint detected.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9258768558502197,
+      "latency_ms": 842.2396183013916,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 41,
+      "ml_input": "CAUTION: High volume of small files uploaded (potential storage waste). | Log: FileStorage: 500 files less than 1KB uploaded in the last minute.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9858306050300598,
+      "latency_ms": 344.16961669921875,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 42,
+      "ml_input": "PENDING: Resource limits approaching for container 'Processor-A'. | Log: K8s: Container Processor-A using 90% of allocated memory.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9510618448257446,
+      "latency_ms": 321.4380741119385,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 43,
+      "ml_input": "ATTENTION: Time drift detected (system clock offset 5 seconds). | Log: Chrony: Large time offset detected. Re-synchronizing now.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9651973247528076,
+      "latency_ms": 214.0350341796875,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 44,
+      "ml_input": "CAUTION: Database connection pool utilization at 95%. New connections might face delays. | Log: DBManager: High pool usage (47/50 connections active).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.985315203666687,
+      "latency_ms": 270.6294059753418,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 45,
+      "ml_input": "PENDING: User 'frank' attempting to access a resource without proper permissions. | Log: Security: Permission check denied access to /admin/settings.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9439302682876587,
+      "latency_ms": 184.5390796661377,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 46,
+      "ml_input": "ATTENTION: Non-standard character set detected in user input field 'Name'. | Log: InputValidator: Input sanitation issue on form ID 102.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8771149516105652,
+      "latency_ms": 188.9054775238037,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 47,
+      "ml_input": "CAUTION: Write queue length is increasing (slow disk write speed). | Log: IOMonitor: Disk write queue depth is 15 (above threshold of 10).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9864379167556763,
+      "latency_ms": 256.7257881164551,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 48,
+      "ml_input": "PENDING: Session lifetime approaching limit for user 'grace'. Auto-renewal pending. | Log: SessionHandler: Session 5f9a3b2e will expire in 5 minutes.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.970752477645874,
+      "latency_ms": 191.56432151794434,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 49,
+      "ml_input": "ATTENTION: An unexpected parameter was passed to the 'OrderCreate' function. | Log: AppLogic: Extra argument 'test_mode' provided but ignored.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8111481070518494,
+      "latency_ms": 285.1746082305908,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 50,
+      "ml_input": "CAUTION: Over 50 failed connection attempts from a single IP address (possible scan). | Log: Firewall: 55 failed TCP handshake attempts from 1.2.3.4.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9748184084892273,
+      "latency_ms": 794.0850257873535,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 51,
+      "ml_input": "PENDING: Configuration file '/etc/app.conf' has been modified outside of deployment process. | Log: ConfigMonitor: File checksum mismatch detected.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8797054290771484,
+      "latency_ms": 330.4443359375,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 52,
+      "ml_input": "ATTENTION: Garbage Collector running too frequently (possible memory leak). | Log: JVM: Full GC executed 10 times in the last hour.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9321354031562805,
+      "latency_ms": 308.1398010253906,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 53,
+      "ml_input": "CAUTION: The version of library 'libcurl' being used is known to have a minor vulnerability. | Log: Dependency: Using potentially insecure library version 7.29.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9789571166038513,
+      "latency_ms": 261.293888092041,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 54,
+      "ml_input": "PENDING: Data integrity check found 5 records with NULL primary keys. | Log: DataCheck: 5 inconsistent records found in 'user_data' table.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9324378371238708,
+      "latency_ms": 228.89161109924316,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 55,
+      "ml_input": "ATTENTION: Rate limiting applied to API key 'k_1234' due to excessive requests. | Log: API-Gateway: Client limit exceeded (1000/min).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9586679339408875,
+      "latency_ms": 184.74864959716797,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 56,
+      "ml_input": "CAUTION: Network latency to all external providers has slightly increased by 20ms. | Log: NetMonitor: Average RTT increased to 80ms.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9749025106430054,
+      "latency_ms": 182.16943740844727,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 57,
+      "ml_input": "PENDING: Scheduled report generation failed to find source data for date '2025-12-03'. | Log: ReportGen: Missing data for yesterday's report.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9024807214736938,
+      "latency_ms": 263.3373737335205,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 58,
+      "ml_input": "ATTENTION: User 'helen' attempted to upload a file exceeding the size limit (105MB). | Log: FileStorage: Rejected upload over 100MB.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9640824794769287,
+      "latency_ms": 205.27386665344238,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 59,
+      "ml_input": "CAUTION: One server node's time is 10 seconds ahead of the others. | Log: ClusterSync: Node 'app-01' time disparity detected.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9832690954208374,
+      "latency_ms": 277.6365280151367,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 60,
+      "ml_input": "PENDING: Database connection failed on first attempt. Retrying now. | Log: DBConnect: Connection attempt 1 failed. Reason: Timeout.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.5198020935058594,
+      "latency_ms": 678.5581111907959,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 61,
+      "ml_input": "ATTENTION: High number of HTTP 404 (Not Found) responses (over 5% of traffic). | Log: WebServer: High rate of missing resource requests.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9630662798881531,
+      "latency_ms": 324.2077827453613,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 62,
+      "ml_input": "CRITICAL: Database service is unreachable, system entering read-only mode. | Log: 2025-12-04 10:42:01 [DBManager] Fatal: Lost connection to primary DB server.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.555034875869751,
+      "latency_ms": 407.9926013946533,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 63,
+      "ml_input": "FAILURE: Server node 'web-02' has stopped responding and is offline. | Log: HealthMonitor: Systemd reported 'app-server@web-02.service' as FAILED.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.5036646127700806,
+      "latency_ms": 403.7148952484131,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 64,
+      "ml_input": "ALERT: Unhandled exception caused the application process to terminate. | Log: Main: Abort signal received. Segmentation fault (core dumped).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.6315294504165649,
+      "latency_ms": 179.49795722961426,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 65,
+      "ml_input": "CRITICAL: Critical data volume failed to mount upon startup. Data inaccessible. | Log: FileSystem: Mount point /mnt/critical_data not found or inaccessible.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.7554944157600403,
+      "latency_ms": 192.4288272857666,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 66,
+      "ml_input": "FAILURE: All retry attempts to send message M_678 have failed. Message dropped. | Log: MessageBroker: Failed to send M_678 after 3 attempts. Message lost.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.5253264904022217,
+      "latency_ms": 269.8495388031006,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 67,
+      "ml_input": "ALERT: High-severity vulnerability exploit attempt detected and blocked. | Log: Security: XSS injection attempt on login page from 200.1.1.1.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9391692280769348,
+      "latency_ms": 233.07013511657715,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 68,
+      "ml_input": "CRITICAL: Memory allocation failed. System OutOfMemory due to massive leak. | Log: JVM: java.lang.OutOfMemoryError: Java heap space.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.9461824893951416,
+      "latency_ms": 231.29796981811523,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 69,
+      "ml_input": "FAILURE: Scheduled data import job 'ExternalFeed' terminated due to unexpected schema change. | Log: DataImport: Failed to parse required fields. Job cancelled.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.9717284440994263,
+      "latency_ms": 82.82852172851562,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 70,
+      "ml_input": "ALERT: API-Gateway returned 503 Service Unavailable for 100% of traffic. | Log: LB: All backend nodes are reporting 503. Traffic halted.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9030929207801819,
+      "latency_ms": 675.6339073181152,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 71,
+      "ml_input": "CRITICAL: Primary system clock synchronization failed permanently. Time is unreliable. | Log: Chrony: FATAL: Failed to obtain time from any source.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8771221041679382,
+      "latency_ms": 318.47548484802246,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 72,
+      "ml_input": "FAILURE: File system check detected irreversible corruption on configuration partition. | Log: Fsck: Inode 54321 is corrupt. Data loss likely.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.6957060098648071,
+      "latency_ms": 300.9939193725586,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 73,
+      "ml_input": "ALERT: Unauthorized access to encrypted configuration files detected. | Log: AUDIT: User 'guest' attempted to read /etc/secure_keys.pem.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9569307565689087,
+      "latency_ms": 270.601749420166,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 74,
+      "ml_input": "CRITICAL: Disk IO operations timed out repeatedly. Storage device failure. | Log: IOMonitor: Device /dev/sda1 timed out 5 times in a row.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9527264833450317,
+      "latency_ms": 218.05548667907715,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 75,
+      "ml_input": "FAILURE: License check failed. Application shutting down in 60 seconds. | Log: Licensing: Product license expired. Shutting down application.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.5776961445808411,
+      "latency_ms": 180.26423454284668,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 76,
+      "ml_input": "ALERT: Sudden and complete drop in network connectivity (Interface eth0 down). | Log: NetMonitor: Interface eth0 link state is DOWN.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.970731258392334,
+      "latency_ms": 185.09888648986816,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 77,
+      "ml_input": "CRITICAL: Failed to load essential configuration file 'db_credentials.yaml'. | Log: ConfigLoader: FileNotFoundException: db_credentials.yaml not found in classpath.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.9131026268005371,
+      "latency_ms": 375.6539821624756,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 78,
+      "ml_input": "FAILURE: Transaction rollback required due to deadlock between two processes. | Log: DBExec: Deadlock found when trying to get lock on table 'orders'.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.9779115319252014,
+      "latency_ms": 287.142276763916,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 79,
+      "ml_input": "ALERT: System health check failed for 3 out of 5 critical services. | Log: HealthMonitor: Critical services: [DB, API, Auth] are FAILED.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9407930970191956,
+      "latency_ms": 140.3372287750244,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 80,
+      "ml_input": "CRITICAL: Backup verification for yesterday's data failed the integrity check. | Log: BackupAgent: Backup ID 20251203_01 is corrupted and unusable.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9051393866539001,
+      "latency_ms": 554.5063018798828,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 81,
+      "ml_input": "FAILURE: Internal routing component failed to initialize after restart. | Log: Router: Initialization failed. No routes loaded. Traffic stalled.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.5810536742210388,
+      "latency_ms": 333.3604335784912,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 82,
+      "ml_input": "ALERT: Suspicious behavioral activity detected (Massive data exfiltration attempt). | Log: Security: 10GB data transfer to external IP 150.1.1.1. Aborting connection.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9743353128433228,
+      "latency_ms": 220.81995010375977,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 83,
+      "ml_input": "CRITICAL: The main queue overflowed. Incoming messages are being rejected. | Log: QueueProcessor: Queue capacity reached (10000/10000). Rejecting M_999.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.8516008257865906,
+      "latency_ms": 304.5053482055664,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 84,
+      "ml_input": "FAILURE: Critical system dependency 'UserService' is returning 500 server responses. | Log: ExternalAPI: 100% failure rate for UserService calls.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9557698965072632,
+      "latency_ms": 190.9770965576172,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 85,
+      "ml_input": "ALERT: All automated scaling attempts failed due to resource quota limit. | Log: K8s: Failed to create new pod. Quota 'CPU' exceeded.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9675512313842773,
+      "latency_ms": 185.04786491394043,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 86,
+      "ml_input": "CRITICAL: The caching service cluster is completely offline. Performance severely degraded. | Log: CacheEngine: Connection to all Redis nodes lost.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.5089402198791504,
+      "latency_ms": 232.70273208618164,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 87,
+      "ml_input": "FAILURE: The batch processing job for payroll could not complete. Manual intervention required. | Log: BatchJob: Payroll job ID 777 FAILED. Exit code 1.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.6984591484069824,
+      "latency_ms": 215.3189182281494,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 88,
+      "ml_input": "ALERT: Denial of Service (DoS) attack suspected due to overwhelming request volume. | Log: WebServer: Request rate 5000/s (10x normal).",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9581842422485352,
+      "latency_ms": 294.1253185272217,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 89,
+      "ml_input": "CRITICAL: The root password for the system was changed without authorization. | Log: AUDIT: Root password modification by unknown source detected.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.834621012210846,
+      "latency_ms": 148.41246604919434,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 90,
+      "ml_input": "FAILURE: System integrity check failed due to unexpected kernel module loading. | Log: Kernel: Module 'malicious_driver' loaded illegally.",
+      "predicted_class": 0,
+      "predicted_label": "ERROR",
+      "confidence": 0.9504947066307068,
+      "latency_ms": 502.00366973876953,
+      "success": true,
+      "error": null
+    },
+    {
+      "index": 91,
+      "ml_input": "ALERT: Cross-site Request Forgery (CSRF) token validation failed for all recent requests. | Log: Security: CSRF check failed for 15 concurrent requests.",
+      "predicted_class": 1,
+      "predicted_label": "WARNING",
+      "confidence": 0.9610639214515686,
+      "latency_ms": 339.77556228637695,
+      "success": true,
+      "error": null
+    }
+  ]
+}

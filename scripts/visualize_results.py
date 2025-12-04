@@ -12,6 +12,9 @@ from pathlib import Path
 def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
+def get_timestamp():
+    from datetime import datetime
+    return datetime.now().strftime("%Y%m%d_%H%M%S")
 
 # ============================================================
 # Visualization Functions
@@ -24,7 +27,7 @@ def plot_class_distribution(labels, counts, output_dir):
     plt.ylabel("Count")
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "class_distribution.png"))
+    plt.savefig(os.path.join(output_dir, f"class_distribution_{get_timestamp()}.png"))
     plt.close()
 
 
@@ -36,7 +39,7 @@ def plot_pie_distribution(labels, counts, output_dir):
     )
     plt.title("Prediction Label Distribution")
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "class_pie.png"))
+    plt.savefig(os.path.join(output_dir, f"class_pie_{get_timestamp()}.png"))
     plt.close()
 
 
@@ -48,7 +51,7 @@ def plot_latency_box(latencies, output_dir):
     plt.ylabel("Latency (ms)")
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "latency_box.png"))
+    plt.savefig(os.path.join(output_dir, f"latency_box_{get_timestamp()}.png"))
     plt.close()
 
 
@@ -60,7 +63,7 @@ def plot_latency_line(latencies, output_dir):
     plt.ylabel("Latency (ms)")
     plt.grid(alpha=0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "latency_line.png"))
+    plt.savefig(os.path.join(output_dir, f"latency_line_{get_timestamp()}.png"))
     plt.close()
 
 
@@ -72,7 +75,7 @@ def plot_latency_hist(latencies, output_dir):
     plt.ylabel("Frequency")
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "latency_hist.png"))
+    plt.savefig(os.path.join(output_dir, f"latency_hist_{get_timestamp()}.png"))
     plt.close()
 
 def resolve_input_file(pattern: str):

@@ -172,8 +172,8 @@ def evaluate_model(
     # Generate output filenames with timestamp
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     input_basename = input_path.stem
-    output_json = output_path / f"eval_{input_basename}_{timestamp}.json"
-    output_txt = output_path / f"eval_{input_basename}_{timestamp}.txt"
+    output_json = output_path / f"{input_basename}_{timestamp}.json"
+    output_txt = output_path / f"{input_basename}_{timestamp}.txt"
     
     print("=" * 70)
     print("ML MODEL EVALUATOR")
