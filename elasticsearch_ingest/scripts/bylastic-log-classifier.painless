@@ -94,8 +94,16 @@ if (idx.contains('pfsense')) {
 }
 
 // ========================= WAZUH =========================
+if (idx.contains('wazuh') && ctx.rule?.description != null) {
+    String level = String.valueOf(ctx.rule?.level ?: '');
+    String agent = ctx.agent?.name ?: '-';
+    ctx.ml_input = 'Wazuh Alert [Level ' + level + ']: ' + ctx.rule.description + ' | Agent: ' + agent;
+    return;
+}
+
+// Fallback cho logs khác có full_log
 if (ctx.rule?.description != null && ctx.full_log != null) {
-    ctx.ml_input = 'Wazuh: ' + ctx.rule.description + ' | Log: ' + ctx.full_log;
+    ctx.ml_input = 'Alert: ' + ctx.rule.description + ' | Log: ' + ctx.full_log;
     return;
 }
 
